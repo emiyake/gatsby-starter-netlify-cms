@@ -9519,6 +9519,11 @@ jpeg-js@^0.4.0:
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.4.1.tgz#937a3ae911eb6427f151760f8123f04c8bfe6ef7"
   integrity sha512-jA55yJiB5tCXEddos8JBbvW+IMrqY0y1tjjx9KNVtA+QPmu7ND5j0zkKopClpUTsaETL135uOM2XfcYG4XRjmw==
 
+jpg@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/jpg/-/jpg-0.0.1.tgz#7e07aeef5bc9695ae8a484e7ff154977317aaeb1"
+  integrity sha512-tMYr45ytavYtQBm4WAkRXHNSZ5CSSX1yHg1LSa9WZAe1O1OjcfHKe7B+gaqXj5VfDuuxL8dUXiM7COUeXM0p9Q==
+
 jquery@^3.4.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"

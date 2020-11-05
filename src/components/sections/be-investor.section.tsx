@@ -1,6 +1,9 @@
 import React from "react";
 import { Col, Grid, Row } from "../grid";
-import { H1, H2, H3 } from "../typography";
+import { ImageBox } from "../image-box.component";
+import { H2, H3 } from "../typography";
+import investorFrontImage from "../../img/img-investor-primary.jpg";
+import investorBackImage from "../../img/img-investor-secondary.png";
 
 // import { Container } from './styles';
 
@@ -18,8 +21,7 @@ export const BeInvestor: React.FC = () => {
         </Col>
 
         <Col  desktop={6} tablet={6} mobile={12}>
-            <H1>Aqui vai imagem</H1>
-
+            <ImageBox frontImageUrl={investorFrontImage} backImageUrl={investorBackImage} solidBackground={true}/>
         </Col>
       </Row>
     </Grid>
