@@ -4,48 +4,38 @@ import {
   FontFamily,
   FontSize,
   FontWeight,
+  LineHeight,
   Spacing,
-  Transition,
 } from "./constants";
 
 export const H1 = styled.h1`
-  padding: 0;
-  margin: 0;
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Large};
-  line-height: 1.5;
+  line-height: ${LineHeight.Large};
   font-weight: ${FontWeight.Medium};
   letter-spacing: 1.2px;
-  color: ${Color.Black};
+  color: ${Color.Secondary};
+  &::first-line {
+    color: ${Color.Primary};
+    font-size:${FontSize.Large}
+  }
 `;
 
 export const H2 = styled.h2`
   font-family: ${FontFamily.Primary};
-  font-size: ${FontSize.Small};
-  line-height: 1.5;
+  font-size: ${FontSize.Large};
+  line-height: ${LineHeight.Large};
   font-weight: ${FontWeight.Medium};
-  margin: 0;
-  transition: color ${Transition.Fast};
-  color: ${Color.Primary};
+  letter-spacing: 1.2px;
+  color: ${Color.Secondary};
 `;
 
 export const H3 = styled.h3`
   font-family: ${FontFamily.Primary};
-  font-size: ${FontSize.Small};
-  line-height: 1.5;
-  font-weight: ${FontWeight.Bold};
-  margin: 0;
-  transition: color ${Transition.Fast};
-  &:hover {
-    color: ${Color.Secondary};
-  }
-`;
-
-export const H4 = styled.h4`
-  font-family: ${FontFamily.Primary};
-  font-size: ${FontSize.XSmall};
+  font-size: ${FontSize.Medium};
+  line-height: ${LineHeight.Medium};
   font-weight: ${FontWeight.Medium};
-  color: ${Color.Quaternary};
+  color: ${Color.Secondary};
 `;
 
 export const Span = styled.span`
@@ -57,7 +47,7 @@ export const Span = styled.span`
 `;
 
 export const Body = styled.p`
-  font-family: ${FontFamily.Primary};
+  font-family: ${FontFamily.Secondary};
   font-size: ${FontSize.Medium};
   font-weight: ${FontWeight.Normal};
   color: ${Color.Quaternary};

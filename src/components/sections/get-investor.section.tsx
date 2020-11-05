@@ -13,7 +13,7 @@ export const GetInvestment: React.FC = () => {
             <H1>Aqui vai imagem</H1>
           </Col>
           <Col desktop={6} tablet={6} mobile={12}>
-            <H2>Receba investimentos</H2>
+            <H1>Receba investimentos</H1>
             <H3>
               O sucesso das startups é o nosso sucesso. Vamos além do capital.
               Apoiamos os empreendedores com a experiência dos nossos

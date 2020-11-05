@@ -1,6 +1,9 @@
+import "typeface-inter";
+import "typeface-jost";
+
 export enum BrandColor {
-    Primary = "#1FC3FF",
-    Secondary = "#FFC542",
+    Primary = "#1DBBFF",
+    Secondary = "#000000",
     Tertiary = "#82C43C",
     Quaternary = "#92929D",
     White = "#FFFFFF",
@@ -33,7 +36,8 @@ export enum BrandColor {
   }
   
   export enum FontFamily {
-    Primary = "Poppins",
+    Primary = "Inter",
+    Secondary = "Jost",
   }
   
   export enum FontWeight {
@@ -42,12 +46,19 @@ export enum BrandColor {
     Normal = "Regular",
     Lighter = 300,
   }
+
+  export enum LineHeight {
+    XSmall = "1rem",
+    Small = "1.4rem",
+    Medium = "1.8rem",
+    Large = "4.2rem",
+  }
   
   export enum FontSize {
     XSmall = "0.8rem",
     Small = "1.2rem",
     Medium = "1.5rem",
-    Large = "2rem",
+    Large = "4rem",
   }
   
   export enum Radius {

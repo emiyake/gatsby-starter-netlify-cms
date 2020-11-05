@@ -9,9 +9,3 @@ export const HeroStyled = styled.div`
     background: ${Color.White} url(${homeBackground}) center center no-repeat;
     background-size: cover;
 `
-
-export const BoxStyled = styled.div`
-    width: 10vw;
-    height: 10vh;
-    background-size: cover;
-`
