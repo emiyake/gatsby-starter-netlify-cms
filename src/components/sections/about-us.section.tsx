@@ -4,7 +4,6 @@ import { Body, H1, H2, H3 } from "../typography";
 
 export const AboutUs: React.FC = () => {
   return (
-
     <Grid>
         <Row horizontalAlign="center">
         <Col desktop={6}>
