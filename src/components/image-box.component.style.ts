@@ -7,7 +7,6 @@ export const ImageBoxStyled = styled.div`
   width: 100%;
   height: 0px;
   padding-bottom: 150%;
-  border: 1px solid red;
 `;  
 
 interface ImageProps {
