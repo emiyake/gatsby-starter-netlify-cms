@@ -47,5 +47,12 @@ export const BackImageStyled = styled.div<ImageProps>`
   padding-bottom: 50%;
   background: ${Color.Gray} url(${props => props.backImageUrl});
   background-size: cover;
-  
 `;
+
+interface ImageBoxSizingProps {
+  width?: string;
+}
+
+export const ImageBoxSizingStyled = styled.div<ImageBoxSizingProps>`
+  width: ${props => props.width};
+` 

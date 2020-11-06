@@ -59,6 +59,7 @@ export enum BrandColor {
     Small = "1.2rem",
     Medium = "1.5rem",
     Large = "4rem",
+    XLarge = "7rem",
   }
   
   export enum Radius {

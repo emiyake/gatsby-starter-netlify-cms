@@ -1,10 +1,13 @@
 import React from "react";
 import { Grid, Row, Col } from "../grid";
 import { NumberBox } from "../number-display.component";
+import { Separator } from "../separator.component.style";
 import { H2, H3, H1 } from "../typography";
 
 export const OurNumbers: React.FC = () => {
   return (
+    <>
+    <Separator type="section" />
     <Grid>
       <Row horizontalAlign="center">
       <Col desktop={12} tablet={6} mobile={12}>
@@ -29,5 +32,7 @@ export const OurNumbers: React.FC = () => {
         </Col>
       </Row>
     </Grid>
+    <Separator type="section" />
+    </>
   );
 };

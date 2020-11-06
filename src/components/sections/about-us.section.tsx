@@ -1,9 +1,12 @@
 import React from "react";
 import { Grid, Row, Col } from "../grid";
+import { Separator } from "../separator.component.style";
 import { Body, H1, H2, H3 } from "../typography";
 
 export const AboutUs: React.FC = () => {
   return (
+    <>
+    <Separator type = "section" />
     <Grid>
         <Row horizontalAlign="center">
         <Col desktop={6}>
@@ -26,5 +29,7 @@ export const AboutUs: React.FC = () => {
         </Col>
       </Row>
     </Grid>
+    <Separator type = "section" />
+    </>
   );
 };

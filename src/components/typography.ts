@@ -17,7 +17,7 @@ export const H1 = styled.h1`
   color: ${Color.Secondary};
   &::first-line {
     color: ${Color.Primary};
-    font-size:${FontSize.Large}
+    font-size:${FontSize.XLarge}
   }
 `;
 

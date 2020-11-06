@@ -1,31 +1,47 @@
 import React from "react";
 import { Col, Grid, Row } from "../grid";
 import { ImageBox } from "../image-box.component";
-import { H2, H3 } from "../typography";
+import { Body, H1, H2, H3 } from "../typography";
 import investorFrontImage from "../../img/img-investor-primary.jpg";
 import investorBackImage from "../../img/img-investor-secondary.png";
+import { SectionWrapperStyled } from "../section-wrapper.component.style";
+import { Separator } from "../separator.component.style";
+import { ImageBoxSizingStyled } from "../image-box.component.style";
 
 // import { Container } from './styles';
 
 export const BeInvestor: React.FC = () => {
   return (
-      <>
-    <Grid>
-      <Row horizontalAlign="center">
-        <Col desktop={6} tablet={6} mobile={12}>
-          <H2>Dê propósito ao seu capital. invista em startups com alto potencial de crescimento.	</H2>
-          <H3>
-            Faça parte dos negócios do futuro associando-se às startups mais promissoras para você.
+    <>
+    <Separator type="section" />
+      <Grid>
+        <Row verticalAlign="center">
+          <Col desktop={6} tablet={6} mobile={12}>
+            <SectionWrapperStyled>
+              <H1>
+                Seja <br /> um investidor
+              </H1>
+              <Separator type="content" />
+              <Body>
+                Se assim como nós, você também é apaixonado por inovação e
+                empreendedorismo e deseja fazer parte dos negócios do futuro do
+                país, venha fazer parte da Poli Angels.
+              </Body>
+            </SectionWrapperStyled>
+          </Col>
 
-          </H3>
-        </Col>
-
-        <Col  desktop={6} tablet={6} mobile={12}>
-            <ImageBox frontImageUrl={investorFrontImage} backImageUrl={investorBackImage} solidBackground={true}/>
-        </Col>
-      </Row>
-    </Grid>
-
-</>
+          <Col desktop={6} tablet={6} mobile={12} horizontalAlign="center">
+            <ImageBoxSizingStyled width="50%">
+              <ImageBox
+                frontImageUrl={investorFrontImage}
+                backImageUrl={investorBackImage}
+                solidBackground={true}
+              />
+            </ImageBoxSizingStyled>
+          </Col>
+        </Row>
+      </Grid>
+      <Separator type="section" />
+    </>
   );
 };
