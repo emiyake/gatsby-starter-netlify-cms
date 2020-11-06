@@ -4,7 +4,7 @@ import "typeface-jost";
 export enum BrandColor {
     Primary = "#1DBBFF",
     Secondary = "#000000",
-    Tertiary = "#82C43C",
+    Tertiary = "#999999",
     Quaternary = "#92929D",
     White = "#FFFFFF",
   }

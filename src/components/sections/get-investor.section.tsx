@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Grid, Row } from "../grid";
-import { H1, H2, H3 } from "../typography";
+import { Body, H1, H2, H3 } from "../typography";
 import investorFrontImage from "../../img/img-investor-primary.jpg";
 import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
@@ -17,12 +17,12 @@ export const GetInvestment: React.FC = () => {
           </Col>
           <Col desktop={6} tablet={6} mobile={12}>
             <H1>Receba investimentos</H1>
-            <H3>
+            <Body>
               O sucesso das startups é o nosso sucesso. Vamos além do capital.
               Apoiamos os empreendedores com a experiência dos nossos
               investidores associados. ganharam com seus anos de mercado.
               Obtenha as conexões certas para o sucesso da sua empresa.
-            </H3>
+            </Body>
           </Col>
 
           <Col desktop={6} tablet={6} mobile={12}>
