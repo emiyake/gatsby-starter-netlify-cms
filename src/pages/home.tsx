@@ -6,11 +6,13 @@ import { AboutUs } from "../components/sections/about-us.section";
 import { GetInvestment } from "../components/sections/get-investor.section";
 import { BeInvestor } from "../components/sections/be-investor.section";
 import { OurNumbers } from "../components/sections/our-numbers-section";
+import { GlobalStyle } from "../components/GlobalStyle";
 
 
 const Home: React.FC = () => {
   return (
     <>
+      <GlobalStyle />
       <Hero />
       <AboutUs />
       <GetInvestment />
@@ -21,4 +23,3 @@ const Home: React.FC = () => {
 };
 
 export default Home;
-

@@ -6,6 +6,7 @@ import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
+import { HideComponentStyled, ShowComponentStyled } from "../responsive-display.component";
 
 // import { Container } from './styles';
 
@@ -15,13 +16,15 @@ export const GetInvestment: React.FC = () => {
       <Separator type="section" />
       <Grid>
         <Row horizontalAlign="space-around" verticalAlign="center">
-          <Col desktop={3} tablet={6} mobile={12} horizontalAlign="center">
-            <ImageBox
-              frontImageUrl={investorFrontImage}
-              backImageUrl={investorBackImage}
-              solidBackground={false}
-              alignFrontRight={true}
-            />
+          <Col desktop={4} tablet={6} mobile={12} horizontalAlign="center">
+            <HideComponentStyled hideInScreen="tablet">
+              <ImageBox
+                frontImageUrl={investorFrontImage}
+                backImageUrl={investorBackImage}
+                solidBackground={false}
+                alignFrontRight={true}
+              />
+              </HideComponentStyled>
           </Col>
           <Col desktop={6} tablet={6} mobile={12} verticalAlign="center">
             <SectionWrapperStyled>
@@ -38,12 +41,22 @@ export const GetInvestment: React.FC = () => {
               </Body>
             </SectionWrapperStyled>
           </Col>
+          <Col desktop={6} tablet={6} mobile={12} horizontalAlign="center">
+            <ShowComponentStyled hideInScreen="tablet">
+              <ImageBox
+                frontImageUrl={investorFrontImage}
+                backImageUrl={investorBackImage}
+                solidBackground={false}
+                alignFrontRight={true}
+              />
+              </ShowComponentStyled>
+          </Col>
         </Row>
       </Grid>
       <Separator type="section" />
       <Grid>
         <Row horizontalAlign="center">
-          <Col desktop={6} tablet={12} mobile={12}>
+          <Col desktop={6} tablet={6} mobile={12}>
             <H1>Aqui vai imagem</H1>
           </Col>
           <Col desktop={6} tablet={6} mobile={12}>

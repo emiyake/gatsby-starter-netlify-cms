@@ -10,7 +10,7 @@ export const Grid = styled.div<GridProps>`
   margin-right: auto;
   box-sizing: border-box;
   width: 100%;
-  padding: ${(props: GridProps) => (props.noGutter ? " " : `0 ${Spacing.XLarge} 0 ${Spacing.XLarge}`)};
+  padding: ${(props: GridProps) => (props.noGutter ? " " : `0 ${Spacing.XXLarge} 0 ${Spacing.XXLarge}`)};
 `;
 
 interface RowProps {
