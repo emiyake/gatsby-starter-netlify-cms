@@ -1,6 +1,6 @@
 import React from "react";
 import { TextBoxStyled } from "../about-us-text-section.component.style";
-import { Grid, Row, Col } from "../grid";
+import { Grid, Row, Col } from "react-flexbox-grid";
 import { Separator } from "../separator.component.style";
 import { Body, H1, H2, H3 } from "../typography";
 
@@ -9,16 +9,8 @@ export const AboutUs: React.FC = () => {
     <>
     <Separator type = "section" />
     <Grid>
-        <Row horizontalAlign="center">
-        <Col desktop={6}>
-        </Col>
-      </Row>
-      <Row horizontalAlign="center">
-        <Col desktop={6}>
-        </Col>
-      </Row>
-      <Row horizontalAlign="center">
-        <Col desktop={6}>
+      <Row>
+        <Col xs={10} lgOffset={1}>
     <TextBoxStyled>
           <H3>Nossa missão</H3>
           <H2>Sobre a Poli Angels</H2>

@@ -30,6 +30,8 @@ export const NumberBoxStyled = styled.div<NumberBoxProps>`
   font-weight: ${FontWeight.Medium};
   letter-spacing: 1.2px;
   color: ${Color.Secondary};
+  background-color: transparent;
+  z-index: 0;
   &::before {
     content: "";
     position: absolute;

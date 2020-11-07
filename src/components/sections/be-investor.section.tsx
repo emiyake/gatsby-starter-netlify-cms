@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Grid, Row } from "../grid";
 import { ImageBox } from "../image-box.component";
 import { Body, H1, H2, H3 } from "../typography";
 import investorFrontImage from "../../img/img-investor-primary.jpg";
@@ -7,16 +6,15 @@ import investorBackImage from "../../img/img-investor-secondary.png";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
 import { Separator } from "../separator.component.style";
 import { ImageBoxSizingStyled } from "../image-box.component.style";
-
-// import { Container } from './styles';
+import { Col, Grid, Row } from "react-flexbox-grid";
 
 export const BeInvestor: React.FC = () => {
   return (
     <>
     <Separator type="section" />
       <Grid>
-        <Row verticalAlign="center">
-          <Col desktop={6} tablet={6} mobile={12}>
+      <Row between="xs" middle="sm" around="xs">
+          <Col xs={12} md={6} lg={5} >
             <SectionWrapperStyled>
               <H1>
                 Seja <br /> um investidor
@@ -30,14 +28,12 @@ export const BeInvestor: React.FC = () => {
             </SectionWrapperStyled>
           </Col>
 
-          <Col desktop={6} tablet={6} mobile={12} horizontalAlign="center">
-            <ImageBoxSizingStyled width="50%">
+          <Col xs={12} md={6} lg={5}>
               <ImageBox
                 frontImageUrl={investorFrontImage}
                 backImageUrl={investorBackImage}
                 solidBackground={true}
               />
-            </ImageBoxSizingStyled>
           </Col>
         </Row>
       </Grid>

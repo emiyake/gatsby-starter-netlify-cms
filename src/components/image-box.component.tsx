@@ -1,7 +1,6 @@
 import React from 'react';
 import { ImageBoxStyled, FrontImageStyled, BackImageStyled } from './image-box.component.style';
 
-// import { Container } from './styles';
 
 interface ImageBoxProps {
     frontImageUrl?: string;

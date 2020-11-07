@@ -1,12 +1,11 @@
 import React from "react";
-import { Col, Grid, Row } from "../grid";
+import { Col, Grid, Row } from "react-flexbox-grid";
 import { Body, H1, H2, H3 } from "../typography";
 import investorFrontImage from "../../img/img-investor-primary.jpg";
 import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
-import { HideComponentStyled, ShowComponentStyled } from "../responsive-display.component";
 
 // import { Container } from './styles';
 
@@ -15,22 +14,11 @@ export const GetInvestment: React.FC = () => {
     <>
       <Separator type="section" />
       <Grid>
-        <Row horizontalAlign="space-around" verticalAlign="center">
-          <Col desktop={4} tablet={6} mobile={12} horizontalAlign="center">
-            <HideComponentStyled hideInScreen="tablet">
-              <ImageBox
-                frontImageUrl={investorFrontImage}
-                backImageUrl={investorBackImage}
-                solidBackground={false}
-                alignFrontRight={true}
-              />
-              </HideComponentStyled>
-          </Col>
-          <Col desktop={6} tablet={6} mobile={12} verticalAlign="center">
+        <Row between="xs" middle="sm" around="xs" reverse={true}>
+          <Col xs={12} md={6} lg={5}>
             <SectionWrapperStyled>
               <H1>
-                Receba <br />
-                investimentos
+                Receba investimentos
               </H1>
               <Separator type="content" />
               <Body>
@@ -41,25 +29,23 @@ export const GetInvestment: React.FC = () => {
               </Body>
             </SectionWrapperStyled>
           </Col>
-          <Col desktop={6} tablet={6} mobile={12} horizontalAlign="center">
-            <ShowComponentStyled hideInScreen="tablet">
-              <ImageBox
-                frontImageUrl={investorFrontImage}
-                backImageUrl={investorBackImage}
-                solidBackground={false}
-                alignFrontRight={true}
-              />
-              </ShowComponentStyled>
+          <Col xs={12} md={6} lg={5}>
+                <ImageBox
+                  frontImageUrl={investorFrontImage}
+                  backImageUrl={investorBackImage}
+                  solidBackground={false}
+                  alignFrontRight={true}
+                />
           </Col>
         </Row>
       </Grid>
       <Separator type="section" />
       <Grid>
-        <Row horizontalAlign="center">
-          <Col desktop={6} tablet={6} mobile={12}>
-            <H1>Aqui vai imagem</H1>
+      <Row between="xs" middle="sm" around="xs">
+          <Col xs={12} md={6} lg={6}>
+            <H2>Inscreva sua Sartup</H2>
           </Col>
-          <Col desktop={6} tablet={6} mobile={12}>
+          <Col xs={12} md={6} lg={6}>
             <H2>Vantagens</H2>
             <H3>Vantagem 01</H3>
             <H3>Vantagem 02</H3>
