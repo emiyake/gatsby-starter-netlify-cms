@@ -32,7 +32,16 @@ export enum BrandColor {
     Medium = "16px",
     Large = "24px",
     XLarge = "40px",
-    XXLarge = "72px",
+    XXLarge = "120px",
+  }
+
+  export enum ProportionalSpacing {
+    XSmall = "2%",
+    Small = "5%",
+    Medium = "10%",
+    Large = "25%",
+    XLarge = "40%",
+    XXLarge = "50%",
   }
   
   export enum FontFamily {

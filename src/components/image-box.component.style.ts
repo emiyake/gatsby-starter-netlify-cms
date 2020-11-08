@@ -4,6 +4,7 @@ import { Color, Spacing } from "./constants";
 
 export const ImageBoxStyled = styled.div`
   position: relative;
+  z-index: 0;
   width: 100%;
   height: 0px;
   padding-bottom: 150%;
@@ -27,14 +28,14 @@ export const FrontImageStyled = styled.div<ImageProps>`
   background: ${Color.LightGray} url(${ props => props.frontImageUrl}) no-repeat center center;
   background-size: cover;
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
+    z-index: -1;
     background-color: ${props => props.solidBackground ? Color.Primary : "transparent"};
     left: -${Spacing.Small};
     top: -${Spacing.Small};
     width: 100%;
     height: 100%;
-    z-index: -1;
   }
 `;
 

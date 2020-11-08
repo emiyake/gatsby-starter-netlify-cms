@@ -11,7 +11,7 @@ import {
 export const H1 = styled.h1`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Large};
-  line-height: ${LineHeight.Large};
+  line-height: ${LineHeight.XLarge};
   font-weight: ${FontWeight.Medium};
   letter-spacing: 1.2px;
   color: ${Color.Secondary};

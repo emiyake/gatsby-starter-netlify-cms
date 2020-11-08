@@ -53,7 +53,7 @@ export const NumberDisplayBoxStyled = styled.div`
   align-items: center;
 `;
 
-export const NumberDisplayTitleStyled = styled.h4`
+export const NumberDisplayTitleStyled = styled.h2`
   text-align: center;
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Small};
@@ -63,3 +63,14 @@ export const NumberDisplayTitleStyled = styled.h4`
   color: ${Color.Tertiary};
 
 `;
+
+interface AlignBoxProps {
+  horizontalAlign?: string;
+}
+
+export const AlignBoxStyled = styled.div<AlignBoxProps>`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: ${props => props.horizontalAlign ? props.horizontalAlign : "flex-start"};
+`

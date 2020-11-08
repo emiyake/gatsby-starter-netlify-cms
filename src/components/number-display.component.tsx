@@ -18,3 +18,4 @@ export const NumberBox: React.FC<NumberBoxProps> = ({children, type, title}) => 
     </NumberDisplayBoxStyled>
   );
 }
+

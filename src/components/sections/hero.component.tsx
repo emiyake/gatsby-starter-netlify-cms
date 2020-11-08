@@ -4,9 +4,7 @@ import {
   HeroStyled,
   HeroTextStyled,
 } from "./hero.component.style";
-import logo from "../img/logo.svg";
-import { Link } from "gatsby";
-import { Body, H1, H2 } from "../typography";
+import { Body } from "../typography";
 import { Separator } from "../separator.component.style";
 
 export const Hero: React.FC = () => {

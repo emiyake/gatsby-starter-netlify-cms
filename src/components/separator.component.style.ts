@@ -6,7 +6,7 @@ interface SeparatorProps {
 }
 
 const SeparatorSize = {
-  section: Spacing.XLarge,
+  section: Spacing.XXLarge,
   content: Spacing.Small,
   icon: Spacing.Small,
 };

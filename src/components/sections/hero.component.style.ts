@@ -8,7 +8,7 @@ export const HeroStyled = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
-  padding: ${Spacing.XXLarge};
+  padding: 5%;
   background: ${Color.White} url(${homeBackground}) center center no-repeat;
   background-size: cover;
 `;
