@@ -1,10 +1,11 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { FadeDirection, FadeTop } from "./animation.components";
 import { Color, Spacing } from "./constants";
 
 
 export const ImageBoxStyled = styled.div`
   position: relative;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: 0px;
   padding-bottom: 150%;
@@ -39,7 +40,8 @@ export const FrontImageStyled = styled.div<ImageProps>`
   }
 `;
 
-export const BackImageStyled = styled.div<ImageProps>`
+
+export const BackImageStyled = styled.div<ImageProps>`  
   position: absolute;
   ${props => props.alignFrontRight ? "left: 0" : "right: 0" };
   bottom: 0;
@@ -48,12 +50,5 @@ export const BackImageStyled = styled.div<ImageProps>`
   padding-bottom: 50%;
   background: ${Color.Gray} url(${props => props.backImageUrl});
   background-size: cover;
+  
 `;
-
-interface ImageBoxSizingProps {
-  width?: string;
-}
-
-export const ImageBoxSizingStyled = styled.div<ImageBoxSizingProps>`
-  width: ${props => props.width};
-` 

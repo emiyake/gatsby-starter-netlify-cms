@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Color } from "./constants";
 
 export const TextBoxStyled = styled.div`
-  position: relative;
   z-index: 0;
   &::before {
     content: "";

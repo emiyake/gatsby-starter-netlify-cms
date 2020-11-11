@@ -57,3 +57,9 @@ export const Body = styled.p`
 export const Quote = styled.span`
   color: ${Color.Black};
 `;
+
+export const Enhance = styled.span`
+  color: ${Color.Primary};
+  font-weight: ${FontWeight.Bold};
+`;
+

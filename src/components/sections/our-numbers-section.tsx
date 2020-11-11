@@ -3,7 +3,9 @@ import { Grid, Row, Col } from "react-flexbox-grid";
 import { NumberBox } from "../number-display.component";
 import { AlignBoxStyled } from "../number-display.component.style";
 import { Separator } from "../separator.component.style";
-import { H2, H3, H1 } from "../typography";
+import { H1 } from "../typography";
+import { Reveal } from "react-reveal";
+import CountUp from "react-countup";
 
 export const OurNumbers: React.FC = () => {
   return (
@@ -12,32 +14,40 @@ export const OurNumbers: React.FC = () => {
       <Grid>
         <Row>
           <Col>
-            <H1>
-              Nossos <br />
-              números
-            </H1>
+            <Reveal bottom>
+              <H1>
+                Nossos <br />
+                números
+              </H1>
+            </Reveal>
           </Col>
         </Row>
         <Row center="xs">
           <Col xs={12} md={4} lg={4}>
             <AlignBoxStyled horizontalAlign="center">
-              <NumberBox type={"tertiary"} title="Número de rounds">
-                8
-              </NumberBox>
+              <Reveal bottom>
+                <NumberBox type={"tertiary"} title="Número de rounds">
+                  <CountUp start={0} end={8} duration={4} useEasing={true} />
+                </NumberBox>
+              </Reveal>
             </AlignBoxStyled>
           </Col>
           <Col xs={12} md={4} lg={4}>
             <AlignBoxStyled horizontalAlign="center">
-              <NumberBox type={"secondary"} title="Número de investidores">
-                17
-              </NumberBox>
+              <Reveal>
+                <NumberBox type={"secondary"} title="Número de investidores">
+                  <CountUp start={0} end={17} duration={4} useEasing={true} />
+                </NumberBox>
+              </Reveal>
             </AlignBoxStyled>
           </Col>
           <Col xs={12} md={4} lg={4}>
             <AlignBoxStyled horizontalAlign="center">
-              <NumberBox type={"tertiary"} title="Total investido">
-                189
-              </NumberBox>
+              <Reveal>
+                <NumberBox type={"tertiary"} title="Milhões investidos">
+                  <CountUp start={0} end={187} duration={4} useEasing={true} />
+                </NumberBox>
+              </Reveal>
             </AlignBoxStyled>
           </Col>
         </Row>

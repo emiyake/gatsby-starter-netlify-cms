@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Color, Spacing } from "../constants";
+import { Color } from "../constants";
 import homeBackground from "../../img/img-home-background.png";
 import { FontFamily, FontSize, FontWeight, LineHeight } from "../constants"
 
@@ -14,11 +14,11 @@ export const HeroStyled = styled.div`
 `;
 
 export const HeroContentWrapperStyled = styled.div`
-  width: 50%;
-
+  width: 60%;
 `;
 
-export const HeroTextStyled = styled.h1`
+
+export const DisplayStyled = styled.h1`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.XLarge};
   line-height: ${LineHeight.XLarge};
@@ -26,3 +26,11 @@ export const HeroTextStyled = styled.h1`
   letter-spacing: 1.2px;
   color: ${Color.Secondary};
 `
+
+export const StrongWordBoxStyled = styled.div`
+  min-height: 8rem;
+  width: 100%;
+`
+
+
+
