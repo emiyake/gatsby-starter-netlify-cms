@@ -48,6 +48,7 @@ interface FadeProps {
     height: 100%;
     display: inline-block;
     animation: ${props => props.direction ? FadeDirection[props.direction]: FadeTop} 1s ease;
-    padding: 2rem 1rem;
     font-size: 1.2rem;
+    display: flex;
+    align-items: flex-end;
   `;
