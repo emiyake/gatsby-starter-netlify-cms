@@ -13,11 +13,11 @@ export enum BrandColor {
     public static readonly Tertiary = BrandColor.Tertiary;
   
     public static readonly Black = "#0C2634";
-    public static readonly White = "white";
+    public static readonly White = "#FFFFFF";
     public static readonly Transparent = "transparent";
   
     public static readonly GrayXDark = "#222";
-    public static readonly GrayDark = "#999";
+    public static readonly GrayDark = "#AAA";
     public static readonly Gray = "#F9F9F9";
 
     public static readonly LightGray = "#FAFAFA";
@@ -63,11 +63,11 @@ export enum BrandColor {
   }
   
   export enum FontSize {
-    XSmall = "0.8rem",
-    Small = "1rem",
-    Medium = "1.3rem",
+    XSmall = "1rem",
+    Small = "1.2rem",
+    Medium = "1.5rem",
     Large = "3rem",
-    XLarge = "5rem",
+    XLarge = "6rem",
   }
   
   export enum Radius {

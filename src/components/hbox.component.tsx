@@ -16,7 +16,6 @@ const HboxStyled = styled.div`
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  border: 1px solid green;
 `;
 
 export const Hbox: any = HboxStyled;

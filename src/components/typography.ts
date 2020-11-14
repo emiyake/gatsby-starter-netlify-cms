@@ -59,7 +59,14 @@ export const Body = styled.p`
   font-size: ${FontSize.Medium};
   font-weight: ${FontWeight.Regular};
   color: ${Color.GrayXDark};
-  margin: ${Spacing.XSmall};
+`;
+
+
+export const BodySecondary = styled.p`
+  font-family: ${FontFamily.Secondary};
+  font-size: ${FontSize.Small};
+  font-weight: ${FontWeight.Regular};
+  color: ${Color.GrayDark};
 `;
 
 export const Quote = styled.span`

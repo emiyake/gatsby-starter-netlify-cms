@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import inclinedListImage from "../img/img-inclined-list.png";
 import verticalList from "../img/img-vertical-list.png";
 import { Breakpoint, ProportionalSpacing } from "./constants";
 

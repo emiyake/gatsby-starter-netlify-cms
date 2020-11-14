@@ -18,15 +18,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 }
 
-@media (min-width: ${Breakpoint.Mobile}){
-  html{
-    font-size: 14px;
-  }
-}
-
 @media (min-width: ${Breakpoint.Desktop}){
   html{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 `;

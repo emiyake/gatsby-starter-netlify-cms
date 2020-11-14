@@ -10,7 +10,8 @@ import { Reveal } from "react-reveal";
 import { NumberBox } from "../number-display.component";
 import CountUp from "react-countup";
 import { Image } from "../image.component";
-import { NumberFrame } from "./number-frame.component";
+import { CardFrame } from "./card-frame.component";
+import { Hbox } from "../hbox.component";
 
 export const AboutUs: React.FC = () => {
   return (
@@ -38,28 +39,46 @@ export const AboutUs: React.FC = () => {
           <Separator type="section" />
           <Row>
             <Col xs={12} md={4} lg={4}>
-              <NumberFrame>
-                <Image.Rocket />
-                <NumberBox type={"primary"} title="startups investidas">
-                  <CountUp start={0} end={8} duration={4} useEasing={true} />
-                </NumberBox>
-              </NumberFrame>
+              <CardFrame>
+                <Hbox>
+                  <Hbox.Item hAlign='center'>
+                    <Image.Rocket />
+                  </Hbox.Item>
+                  <Hbox.Item>
+                    <NumberBox title="Startups investidas">
+                      <CountUp start={0} end={8} duration={4} useEasing={true} />
+                    </NumberBox>
+                  </Hbox.Item>
+                </Hbox>
+              </CardFrame>
             </Col>
             <Col xs={12} md={4} lg={4}>
-              <NumberFrame>
-                <Image.members />
-                <NumberBox type={"tertiary"} title="Investidores anjo">
-                  <CountUp start={0} end={126} duration={4} useEasing={true} />
-                </NumberBox>
-              </NumberFrame>
+              <CardFrame>
+                <Hbox>
+                  <Hbox.Item hAlign='center'>
+                    <Image.members />
+                  </Hbox.Item>
+                  <Hbox.Item>
+                    <NumberBox title="Investidores anjo">
+                      <CountUp start={0} end={126} duration={4} useEasing={true} />
+                    </NumberBox>
+                  </Hbox.Item>
+                </Hbox>
+              </CardFrame>
             </Col>
             <Col xs={12} md={4} lg={4}>
-              <NumberFrame>
-                <Image.coin />
-                <NumberBox type={"secondary"} title="Milhões aportados">
-                  <CountUp start={0} end={10} duration={4} useEasing={true} />
-                </NumberBox>
-              </NumberFrame>
+              <CardFrame>
+                <Hbox>
+                  <Hbox.Item hAlign='center'>
+                    <Image.coin />
+                  </Hbox.Item>
+                  <Hbox.Item>
+                    <NumberBox title="milhões aportados">
+                      $ <CountUp start={0} end={126} duration={4} useEasing={true} />
+                    </NumberBox>
+                  </Hbox.Item>
+                </Hbox>
+              </CardFrame>
             </Col>
           </Row>
         </Grid>
