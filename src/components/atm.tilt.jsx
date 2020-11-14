@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
+import { Radius } from './constants';
 
 const MAX_DEG = 20;
 
@@ -33,6 +34,7 @@ const TiltStyled = styled.div`
 `;
 
 const ShadowStyled = styled.div`
+  border-radius: ${Radius.Large};
   box-shadow: 0px 0px ${props => props.x ? '60px' : '0px'} 0px rgba(0,0,0,0.3);
   transform: scale(${props => props.x ? 1.05 : 1});
   transition: box-shadow 0.3s ease-in-out, transform 0.5s ease-in-out;

@@ -28,7 +28,7 @@ export const ImageBox: React.FC<ImageBoxProps> = ({
           {(progress) => (
             <Tween
               from={{
-                css: { left: "-1000px", top: "0", rotationY: 130, rotationX: -120, boxShadow: "0px 20px 0px 0px #000", borderBottomRightRadius:"1000px", borderTopLeftRadius:"300px" },
+                css: { left: "1000px", top: "0", rotationY: 130, rotationX: -120, boxShadow: "0px 20px 0px 0px #000", borderBottomRightRadius:"1000px", borderTopLeftRadius:"300px" },
                 ease: "Strong.easeOut",
               }}
               paused
@@ -48,10 +48,10 @@ export const ImageBox: React.FC<ImageBoxProps> = ({
             >
               <FrontImageStyled
                 frontImageUrl={frontImageUrl}
-                solidBackground={solidBackground}
                 alignFrontRight={alignFrontRight}
+                solidBackground={false}
               />
-            </Tween>
+          </Tween>
           )}
         </Scene>
       </Controller>
@@ -62,7 +62,7 @@ export const ImageBox: React.FC<ImageBoxProps> = ({
             {(progress) => (
               <Tween
                 from={{
-                  css: { left: "-1000px", top: "-500px", rotation: 0, scale: "0.5" },
+                  css: { left: "1000px", top: "500px", rotation: 0, scale: "0.5" },
                   ease: "Strong.easeOut",
                 }}
                 paused
@@ -81,7 +81,7 @@ export const ImageBox: React.FC<ImageBoxProps> = ({
                   backImageUrl={backImageUrl}
                   alignFrontRight={alignFrontRight}
                 />
-              </Tween>
+             </Tween>
             )}
           </Scene>
         </Controller>

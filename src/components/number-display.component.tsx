@@ -1,21 +1,16 @@
 import React from 'react';
-import { NumberBoxStyled, NumberDisplayBoxStyled, NumberDisplayTitleStyled } from './number-display.component.style';
-
+import { NumberBoxStyled, NumberBoxWrapperStyled, NumberDisplayTitleStyled } from './number-display.component.style';
+import { BodySecondary } from './typography';
 
 interface NumberBoxProps {
-  type?: "primary" | "secondary" | "tertiary" | "quaternary";
   title?: string;
 }
-export const NumberBox: React.FC<NumberBoxProps> = ({children, type, title}) => {
+export const NumberBox: React.FC<NumberBoxProps> = ({children, title}) => {
   return (
-    <NumberDisplayBoxStyled>
-      <NumberBoxStyled type={type}> 
-        {children}
-      </NumberBoxStyled>
-      <NumberDisplayTitleStyled>
-        {title}
-      </NumberDisplayTitleStyled>
-    </NumberDisplayBoxStyled>
+    <NumberBoxWrapperStyled>
+      <NumberBoxStyled>{children}</NumberBoxStyled>
+      <BodySecondary>{title}</BodySecondary>
+    </NumberBoxWrapperStyled>
   );
 }
 

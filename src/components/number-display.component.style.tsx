@@ -20,37 +20,16 @@ const BackgroundAlign = {
 };
 
 export const NumberBoxStyled = styled.div<NumberBoxProps>`
-  position: relative;
-  display: flex;
-  justify-content: center;
-  min-width: 100px;
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Large};
   line-height: ${LineHeight.Large};
   font-weight: ${FontWeight.Medium};
-  letter-spacing: 1.2px;
-  color: ${Color.Secondary};
+  color: ${Color.Black};
   background-color: transparent;
-  z-index: 0;
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    ${(props) =>
-      props.type ? BackgroundAlign[props.type] : BackgroundAlign.primary};
-    width: 75%;
-    height: 75%;
-    background-color: ${Color.Primary};
-  }
 `;
 
-export const NumberDisplayBoxStyled = styled.div`
-  max-width: 200px;
-  display: flex; 
-  padding: ${Spacing.Medium};
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+export const NumberBoxWrapperStyled = styled.div`
+  text-align: center;
 `;
 
 export const NumberDisplayTitleStyled = styled.h2`
@@ -60,7 +39,7 @@ export const NumberDisplayTitleStyled = styled.h2`
   line-height: ${LineHeight.Small};
   font-weight: ${FontWeight.Medium};
   letter-spacing: 1.2px;
-  color: ${Color.Tertiary};
+  color: ${Color.Black};
 
 `;
 

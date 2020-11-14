@@ -1,6 +1,5 @@
 import React from "react";
-import { ImageBox } from "../image-box.component";
-import { Body, H1, H2, H3 } from "../typography";
+import { Body, H1 } from "../typography";
 import investorFrontImage from "../../img/img-investor-primary.jpg";
 import investorBackImage from "../../img/img-investor-secondary.png";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
@@ -21,7 +20,7 @@ export const BeInvestor: React.FC = () => {
                 <H1>
                   Seja <br /> um investidor
                 </H1>
-                <Separator type="content" />
+                <Separator type="subsection" />
                 <Body>
                   Se assim como nós, você também é apaixonado por inovação e
                   empreendedorismo e deseja fazer parte dos negócios do futuro

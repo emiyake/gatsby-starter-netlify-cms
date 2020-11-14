@@ -6,7 +6,7 @@ import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
-import { ListBox } from "../list-box.component";
+// import { ListBox } from "../list-box.component";
 import { Fade, Reveal } from "react-reveal";
 import { Controller, Scene } from "react-scrollmagic";
 
@@ -16,6 +16,18 @@ export const GetInvestment: React.FC = () => {
       <Separator type="section" />
       <Grid>
         <Row between="xs" middle="sm" around="xs" reverse={true}>
+          <Col xs={12} md={6} lg={5}>
+            <Controller>
+              <Scene duration={400} pin={false} triggerElement="#trigger">
+                <ImageBox
+                  frontImageUrl={investorFrontImage}
+                  backImageUrl={investorBackImage}
+                  solidBackground={false}
+                  alignFrontRight={true}
+                />
+              </Scene>
+            </Controller>
+          </Col>
           <Col xs={12} md={6} lg={5}>
             <SectionWrapperStyled>
               <Reveal bottom cascade>
@@ -29,18 +41,6 @@ export const GetInvestment: React.FC = () => {
               </Reveal>
             </SectionWrapperStyled>
           </Col>
-          <Col xs={12} md={6} lg={5}>
-            <Controller>
-              <Scene duration={400} pin={false} triggerElement="#trigger">
-                <ImageBox
-                  frontImageUrl={investorFrontImage}
-                  backImageUrl={investorBackImage}
-                  solidBackground={false}
-                  alignFrontRight={true}
-                />
-              </Scene>
-            </Controller>
-          </Col>
         </Row>
       </Grid>
       <Separator type="section" />
@@ -52,7 +52,7 @@ export const GetInvestment: React.FC = () => {
             </Fade>
           </Col>
           <Col xs={12} md={12} lg={7}>
-            <ListBox />
+            {/* <ListBox /> */}
           </Col>
         </Row>
       </Grid>
