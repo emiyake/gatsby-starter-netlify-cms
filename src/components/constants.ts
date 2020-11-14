@@ -52,7 +52,7 @@ export enum BrandColor {
   export enum FontWeight {
     Medium = 600,
     Bold = "bold",
-    Normal = "Regular",
+    Regular = "Regular",
     Lighter = 300,
   }
 

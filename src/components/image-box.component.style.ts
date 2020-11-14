@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { FadeDirection, FadeTop } from "./animation.components";
-import { Color, Spacing } from "./constants";
+import { Color, Radius, Spacing } from "./constants";
 
 export const ImageBoxStyled = styled.div`
   position: relative;
@@ -20,7 +20,7 @@ interface ImageProps {
 }
 
 export const FrontImageStyled = styled.div<ImageProps>`
-  position: absolute;
+  position: relative;
   ${(props) => (props.alignFrontRight ? "right: 0" : "left: 0 ")};
   width: 80%;
   height: 0;
@@ -28,23 +28,24 @@ export const FrontImageStyled = styled.div<ImageProps>`
   background: ${Color.LightGray} url(${(props) => props.frontImageUrl})
     no-repeat center center;
   background-size: cover;
+  border-radius: ${Radius.Large};
   &::before {
     content: "";
     position: absolute;
-    z-index: -1;
     background-color: ${(props) =>
       props.solidBackground ? Color.Primary : "transparent"};
-    left: -${Spacing.Small};
-    top: -${Spacing.Small};
+    left: -${Spacing.XLarge};
+    top: -${Spacing.XLarge};
     width: 100%;
     height: 100%;
+    
   }
 `;
 
 export const BackImageStyled = styled.div<ImageProps>`
   position: relative;
   vertical-align: bottom;
-  ${(props) => (props.alignFrontRight ? "left: 0" : "right: 0")};
+  right: 0;
   width: 50%;
   height: 0;
   padding-bottom: 50%;
@@ -73,8 +74,7 @@ position: absolute;
     top: -${Spacing.Small};
     width: 100%;
     height: 100%;
-    &:hover {
-    cursor: pointer;
+    
   }
   }
 

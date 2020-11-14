@@ -49,7 +49,7 @@ export const Span = styled.span`
 export const Body = styled.p`
   font-family: ${FontFamily.Secondary};
   font-size: ${FontSize.Medium};
-  font-weight: ${FontWeight.Normal};
+  font-weight: ${FontWeight.Regular};
   color: ${Color.Secondary};
   margin: ${Spacing.XSmall};
 `;
