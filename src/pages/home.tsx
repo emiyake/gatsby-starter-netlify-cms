@@ -7,6 +7,33 @@ import { GetInvestment } from "../components/sections/get-investor.section";
 import { BeInvestor } from "../components/sections/be-investor.section";
 import { OurNumbers } from "../components/sections/our-numbers-section";
 import { GlobalStyle } from "../components/GlobalStyle";
+import styled from "styled-components";
+import { Grid } from "react-flexbox-grid";
+
+
+const TweenStyled = styled(Grid)`
+  height: 700vh;
+  .section {
+    height: 100vh;
+    background-color: red;
+  }
+  
+  .tween {
+	  width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 0 !important;
+    position: relative;
+  }
+  
+  .stagger {
+    width: 100px;
+    height: 100px;
+    left: 700px;
+    background-color: #ddd;
+    position: relative;
+  }
+`;
 
 
 const Home: React.FC = () => {

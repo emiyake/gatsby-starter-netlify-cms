@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Color } from "./constants";
 
 export const TextBoxStyled = styled.div`
+  position: relative;
   z-index: 0;
   &::before {
     content: "";
@@ -14,4 +15,4 @@ export const TextBoxStyled = styled.div`
     padding-bottom: 100px;
     background-color: ${Color.Primary};
   }
-`
+`;

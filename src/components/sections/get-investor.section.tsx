@@ -8,6 +8,7 @@ import { Separator } from "../separator.component.style";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
 import { ListBox } from "../list-box.component";
 import { Fade, Reveal } from "react-reveal";
+import { Controller, Scene } from "react-scrollmagic";
 
 export const GetInvestment: React.FC = () => {
   return (
@@ -21,22 +22,24 @@ export const GetInvestment: React.FC = () => {
                 <H1>Receba investimentos</H1>
                 <Separator type="content" />
                 <Body>
-                  O sucesso das startups é o nosso sucesso. Vamos além do
-                  capital. Apoiamos os empreendedores com a experiência dos
-                  nossos investidores associados. ganharam com seus anos de
-                  mercado. Obtenha as conexões certas para o sucesso da sua
-                  empresa.
+                  Vamos além do capital. Apoiamos os empreendedores com a
+                  experiência dos investidores associados. Obtenha as conexões
+                  certas para o sucesso da sua startup.
                 </Body>
               </Reveal>
             </SectionWrapperStyled>
           </Col>
           <Col xs={12} md={6} lg={5}>
-            <ImageBox
-              frontImageUrl={investorFrontImage}
-              backImageUrl={investorBackImage}
-              solidBackground={false}
-              alignFrontRight={true}
-            />
+            <Controller>
+              <Scene duration={400} pin={false} triggerElement="#trigger">
+                <ImageBox
+                  frontImageUrl={investorFrontImage}
+                  backImageUrl={investorBackImage}
+                  solidBackground={false}
+                  alignFrontRight={true}
+                />
+              </Scene>
+            </Controller>
           </Col>
         </Row>
       </Grid>

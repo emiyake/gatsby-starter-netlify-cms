@@ -7,6 +7,7 @@ import { SectionWrapperStyled } from "../section-wrapper.component.style";
 import { Separator } from "../separator.component.style";
 import { Col, Grid, Row } from "react-flexbox-grid";
 import { Reveal } from "react-reveal";
+import { ImageBoxInvestor } from "../image-box-investor.component";
 
 export const BeInvestor: React.FC = () => {
   return (
@@ -31,11 +32,13 @@ export const BeInvestor: React.FC = () => {
           </Col>
 
           <Col xs={12} md={6} lg={5}>
-            <ImageBox
+            <Reveal bottom>
+            <ImageBoxInvestor
               frontImageUrl={investorFrontImage}
               backImageUrl={investorBackImage}
               solidBackground={true}
             />
+            </Reveal>
           </Col>
         </Row>
       </Grid>
