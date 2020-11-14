@@ -38,6 +38,14 @@ export const H3 = styled.h3`
   color: ${Color.Primary};
 `;
 
+export const H4 = styled.h4`
+  font-family: ${FontFamily.Primary};
+  font-size: ${FontSize.Medium};
+  line-height: ${LineHeight.Medium};
+  font-weight: ${FontWeight.Regular};
+  color: ${Color.Secondary};
+`;
+
 export const Span = styled.span`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.XSmall};

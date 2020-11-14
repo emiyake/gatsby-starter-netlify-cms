@@ -17,6 +17,18 @@ export const GetInvestment: React.FC = () => {
       <Grid>
         <Row between="xs" middle="sm" around="xs" reverse={true}>
           <Col xs={12} md={6} lg={5}>
+            <Controller>
+              <Scene duration={400} pin={false} triggerElement="#trigger">
+                <ImageBox
+                  frontImageUrl={investorFrontImage}
+                  backImageUrl={investorBackImage}
+                  solidBackground={false}
+                  alignFrontRight={true}
+                />
+              </Scene>
+            </Controller>
+          </Col>
+          <Col xs={12} md={6} lg={5}>
             <SectionWrapperStyled>
               <Reveal bottom cascade>
                 <H1>Receba investimentos</H1>
@@ -28,18 +40,6 @@ export const GetInvestment: React.FC = () => {
                 </Body>
               </Reveal>
             </SectionWrapperStyled>
-          </Col>
-          <Col xs={12} md={6} lg={5}>
-            <Controller>
-              <Scene duration={400} pin={false} triggerElement="#trigger">
-                <ImageBox
-                  frontImageUrl={investorFrontImage}
-                  backImageUrl={investorBackImage}
-                  solidBackground={false}
-                  alignFrontRight={true}
-                />
-              </Scene>
-            </Controller>
           </Col>
         </Row>
       </Grid>

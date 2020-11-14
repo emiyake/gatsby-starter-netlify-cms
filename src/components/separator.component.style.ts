@@ -2,13 +2,14 @@ import styled from "styled-components";
 import { Spacing } from "./constants";
 
 interface SeparatorProps {
-  type?: "content" | "section" | "icon";
+  type?: "content" | "section" | "icon" | "card";
 }
 
 const SeparatorSize = {
-  section: Spacing.XXLarge,
+  card: Spacing.Large,
   content: Spacing.Small,
   icon: Spacing.Small,
+  section: Spacing.XXLarge,
 };
 
 export const Separator = styled.div<SeparatorProps>`
