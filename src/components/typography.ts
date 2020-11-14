@@ -8,13 +8,20 @@ import {
   Spacing,
 } from "./constants";
 
+export const DisplayStyled = styled.h1`
+  font-family: ${FontFamily.Primary};
+  font-size: ${FontSize.XLarge};
+  line-height: ${LineHeight.XLarge};
+  font-weight: ${FontWeight.Bold};
+  color: ${Color.Black};
+`
+
 export const H1 = styled.h1`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Large};
-  line-height: ${LineHeight.XLarge};
-  font-weight: ${FontWeight.Medium};
-  letter-spacing: 1.2px;
-  color: ${Color.Secondary};
+  line-height: ${LineHeight.Large};
+  font-weight: ${FontWeight.Bold};
+  color: ${Color.Black};
   &::first-line {
     color: ${Color.Primary};
     font-size:${FontSize.XLarge}
@@ -25,9 +32,9 @@ export const H2 = styled.h2`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.Large};
   line-height: ${LineHeight.Large};
-  font-weight: ${FontWeight.Medium};
-  letter-spacing: 1.2px;
-  color: ${Color.Secondary};
+  font-weight: ${FontWeight.Bold};
+  color: ${Color.Black};
+  margin-bottom: ${Spacing.Medium};
 `;
 
 export const H3 = styled.h3`
@@ -35,14 +42,15 @@ export const H3 = styled.h3`
   font-size: ${FontSize.Medium};
   line-height: ${LineHeight.Medium};
   font-weight: ${FontWeight.Medium};
-  color: ${Color.Primary};
+  margin-bottom: ${Spacing.Medium};
+  color: ${Color.Black};
 `;
 
 export const Span = styled.span`
   font-family: ${FontFamily.Primary};
   font-size: ${FontSize.XSmall};
   font-weight: ${FontWeight.Medium};
-  color: ${Color.Quaternary};
+  color: ${Color.GrayDark};
   margin: ${Spacing.XSmall};
 `;
 
@@ -50,7 +58,7 @@ export const Body = styled.p`
   font-family: ${FontFamily.Secondary};
   font-size: ${FontSize.Medium};
   font-weight: ${FontWeight.Regular};
-  color: ${Color.Secondary};
+  color: ${Color.GrayXDark};
   margin: ${Spacing.XSmall};
 `;
 

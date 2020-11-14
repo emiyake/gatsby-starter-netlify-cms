@@ -3,27 +3,25 @@ import "typeface-jost";
 
 export enum BrandColor {
     Primary = "#1DBBFF",
-    Secondary = "#000000",
+    // Secondary = "#000000",
     Tertiary = "#999999",
-    Quaternary = "#92929D",
-    White = "#FFFFFF",
   }
   
   export class Color {
     public static readonly Primary = BrandColor.Primary;
-    public static readonly Secondary = BrandColor.Secondary;
+    public static readonly Secondary = BrandColor.Primary;
     public static readonly Tertiary = BrandColor.Tertiary;
-    public static readonly Quaternary = BrandColor.Quaternary;
   
-    public static readonly Black = "black";
+    public static readonly Black = "#0C2634";
     public static readonly White = "white";
     public static readonly Transparent = "transparent";
   
+    public static readonly GrayXDark = "#222";
+    public static readonly GrayDark = "#999";
     public static readonly Gray = "#F9F9F9";
+
     public static readonly LightGray = "#FAFAFA";
-    public static readonly Alert = "#DC2729";
-    public static readonly Warning = "#F5A623";
-    public static readonly Success = "#1ABC9C";
+
   }
   
   export enum Spacing {
@@ -58,18 +56,18 @@ export enum BrandColor {
 
   export enum LineHeight {
     XSmall = "1rem",
-    Small = "1.4rem",
-    Medium = "1.8rem",
-    Large = "4.2rem",
+    Small = "1.2rem",
+    Medium = "1.4rem",
+    Large = "4rem",
     XLarge = "6rem",
   }
   
   export enum FontSize {
     XSmall = "0.8rem",
-    Small = "1.2rem",
-    Medium = "1.5rem",
-    Large = "4rem",
-    XLarge = "7rem",
+    Small = "1rem",
+    Medium = "1.3rem",
+    Large = "3rem",
+    XLarge = "5rem",
   }
   
   export enum Radius {

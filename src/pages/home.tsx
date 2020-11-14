@@ -6,6 +6,8 @@ import { AboutUs } from "../components/sections/about-us.section";
 import { GetInvestment } from "../components/sections/get-investor.section";
 import { BeInvestor } from "../components/sections/be-investor.section";
 import { OurNumbers } from "../components/sections/our-numbers-section";
+import { Footer } from "../components/sections/footer.component";
+
 import { GlobalStyle } from "../components/GlobalStyle";
 import styled from "styled-components";
 import { Grid } from "react-flexbox-grid";
@@ -45,6 +47,7 @@ const Home: React.FC = () => {
       <GetInvestment />
       <BeInvestor />
       <OurNumbers />
+      <Footer />
     </>
   );
 };
