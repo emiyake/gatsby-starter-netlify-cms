@@ -43,7 +43,7 @@ export const H3 = styled.h3`
   font-size: ${FontSize.Medium};
   line-height: ${LineHeight.Medium};
   font-weight: ${FontWeight.Medium};
-  margin-bottom: ${Spacing.Medium};
+  margin: ${Spacing.Medium} 0;
   color: ${Color.Black};
 `;
 
@@ -59,7 +59,7 @@ export const Body = styled.p`
   font-family: ${FontFamily.Secondary};
   font-size: ${FontSize.Medium};
   font-weight: ${FontWeight.Regular};
-  color: ${Color.GrayXDark};
+  color: ${Color.GrayDark};
 `;
 
 
