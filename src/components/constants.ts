@@ -30,7 +30,7 @@ export enum BrandColor {
     Medium = "16px",
     Large = "24px",
     XLarge = "40px",
-    XXLarge = "120px",
+    XXLarge = "160px",
   }
 
   export enum ProportionalSpacing {
@@ -59,13 +59,13 @@ export enum BrandColor {
     Small = "1.2rem",
     Medium = "1.4rem",
     Large = "4rem",
-    XLarge = "6rem",
+    XLarge = "5rem",
   }
   
   export enum FontSize {
-    XSmall = "1rem",
-    Small = "1.2rem",
-    Medium = "1.5rem",
+    XSmall = "1.3rem",
+    Small = "1.5rem",
+    Medium = "1.8rem",
     Large = "3rem",
     XLarge = "6rem",
   }
