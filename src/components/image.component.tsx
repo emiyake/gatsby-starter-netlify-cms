@@ -14,6 +14,15 @@ import interview from "../img/ic-interview.svg";
 import investment from "../img/ic-investment.svg";
 import sectionBeInvestor from "../img/img-investor-primary.jpg";
 
+import logoAgriconnected from "../img/img-logo-agriconnected.png";
+import logoBebidaNaPorta from "../img/img-logo-bebida.png";
+import logoBynd from "../img/img-logo-bynd.png";
+import logoIdgeo from "../img/img-logo-idgeo.png";
+import logoOnTheGo from "../img/img-logo-onthego.png";
+import logoSourceLevel from "../img/img-logo-sourcelevel.png";
+import logoWorc from "../img/img-logo-worc.png";
+
+
 export const Image = {
   coin: () => <img src={coin} alt="coinIcon" height="80px" />,
   committee: () => <img src={committee} alt="committee" width="80px" />,
@@ -22,6 +31,13 @@ export const Image = {
   InlinedList: () => <img src={inclinedList} alt="facebookIcon" width="300px" />,
   Interview: () =>  <img src={interview} alt="interview" width="80px" />,
   Investment: () =>  <img src={investment} alt="interview" width="80px" />,
+  LogoAgriConnected: () => <img src={logoAgriconnected} alt="Agriconnected" style={{height: "80px" }} />,
+  LogoBebidaNaPorta: () => <img src={logoBebidaNaPorta} alt="Bebida na porta" style={{height: "80px" }} />,
+  LogoBynd: () => <img src={logoBynd} alt="Bynd" style={{height: "80px" }} />,
+  LogoIdgeo: () => <img src={logoIdgeo} alt="IdGeo" style={{height: "80px" }} />,
+  LogoOnTheGo: () => <img src={logoOnTheGo} alt="On the go" style={{height: "80px" }} />,
+  LogoSourceLevel: () => <img src={logoSourceLevel} alt="Source Level" style={{height: "80px" }} />,
+  LogoWorc: () => <img src={logoWorc} alt="Worc" style={{height: "80px" }} />,
   Members: () => <img src={members} alt="membersIcon" width="80px" />,
   PartnerGreat: () => <img src={partnerGreat} alt="Great Place to Work" width="60%" />,
   PartnerTaqtile: () => <img src={partnerTaqtile} alt="Instituto Taqtile" width="60%" />,
