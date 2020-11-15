@@ -19,7 +19,7 @@ export const AboutUs: React.FC = () => {
       <Separator type="section" />
         <Grid>
           <Row center="lg">
-            <Col xs={12} md={10} lg={9} style={{ border: "1px solid red;" }}>
+            <Col xs={12} md={10} lg={9}>
               <Reveal bottom cascade>
                 <TextBoxStyled>
                   <AboutUsTitleStyled>

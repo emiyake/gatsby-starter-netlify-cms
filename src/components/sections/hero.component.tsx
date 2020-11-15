@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
           Investimos em
           <StrongWordBoxStyled>
             <Typist cursor={{element: " "}} >
-              <Typist.Delay ms="0" />
+              <Typist.Delay ms={0} />
               <Enhance>startups</Enhance>&nbsp;
               <Typist.Backspace count={9} delay={1500} />
               <Enhance>empreendedores</Enhance>
@@ -23,6 +23,8 @@ export const Hero: React.FC = () => {
               <Typist.Backspace count={8} delay={1500} />
               <Enhance>inovação</Enhance>&nbsp;
               <Typist.Backspace count={9} delay={1500} />
+              <Enhance>tecnologia</Enhance>&nbsp;
+              <Typist.Backspace count={11} delay={1500} />
               <Enhance>startups</Enhance>&nbsp;
             </Typist>
           </StrongWordBoxStyled>

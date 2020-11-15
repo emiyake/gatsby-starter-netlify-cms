@@ -6,7 +6,7 @@ export const HeroStyled = styled.div`
   display: flex;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   padding: 5%;
   background: ${Color.White} url(${homeBackground}) center center no-repeat;
   background-size: cover;

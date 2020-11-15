@@ -21,7 +21,7 @@ const BackgroundAlign = {
 
 export const NumberBoxStyled = styled.div<NumberBoxProps>`
   font-family: ${FontFamily.Primary};
-  font-size: ${FontSize.Large};
+  font-size: ${FontSize.Medium};
   line-height: ${LineHeight.Large};
   font-weight: ${FontWeight.Medium};
   color: ${Color.Black};
@@ -35,7 +35,7 @@ export const NumberBoxWrapperStyled = styled.div`
 export const NumberDisplayTitleStyled = styled.h2`
   text-align: center;
   font-family: ${FontFamily.Primary};
-  font-size: ${FontSize.Small};
+  font-size: ${FontSize.XSmall};
   line-height: ${LineHeight.Small};
   font-weight: ${FontWeight.Medium};
   letter-spacing: 1.2px;
