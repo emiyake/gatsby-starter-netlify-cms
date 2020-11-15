@@ -6,7 +6,7 @@ import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
 import { SectionWrapperStyled } from "../section-wrapper.component.style";
-// import { ListBox } from "../list-box.component";
+import { ListBox } from "../list-box.component";
 import { Fade, Reveal } from "react-reveal";
 import { Controller, Scene } from "react-scrollmagic";
 import { Hbox } from "../hbox.component";
@@ -67,7 +67,7 @@ export const GetInvestment: React.FC = () => {
             </Fade>
           </Col>
           <Col xs={12} md={12} lg={7}>
-            {/* <ListBox /> */}
+            <ListBox />
           </Col>
         </Row>
       </Grid>

@@ -76,5 +76,4 @@ position: absolute;
     
   }
   }
-
-`
+`;

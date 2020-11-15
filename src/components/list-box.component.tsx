@@ -7,8 +7,8 @@ import {
 } from "./list-box.component.style";
 import { Separator } from "./separator.component.style";
 import { Body, H3 } from "./typography";
-import { Image } from "./image.component";
-import { Link } from "./link.component";
+import { Image } from "./image.component" 
+import { Link } from "./link.component.style";
 
 const Fade = require("react-reveal/Fade");
 
@@ -25,7 +25,7 @@ export const ListBox: React.FC = () => {
               <H3>Inscrição</H3>
               <Body>
                 As startups se inscrevem para participar do processo através da
-                plataforma <Link href="http://gust.com/pt-BR">GUST</Link>
+                plataforma <Link target="blank" href="http://gust.com/pt-BR">GUST</Link>
               </Body>
               <Separator type="content" />
             </Hbox.Item>
@@ -34,7 +34,7 @@ export const ListBox: React.FC = () => {
         <ListItemStyled>
           <Hbox>
             <ListIconWrapperStyled>
-              <Image.pitch />
+              <Image.Pitch />
             </ListIconWrapperStyled>
             <Hbox.Item vAlign="center">
               <H3>Pitch</H3>
@@ -64,7 +64,7 @@ export const ListBox: React.FC = () => {
         <ListItemStyled>
           <Hbox>
             <ListIconWrapperStyled>
-              <Image.interview />
+              <Image.Interview />
             </ListIconWrapperStyled>
             <Hbox.Item vAlign="center">
               <H3>Entrevista</H3>
@@ -79,7 +79,7 @@ export const ListBox: React.FC = () => {
         <ListItemStyled>
           <Hbox>
             <ListIconWrapperStyled>
-              <Image.investment />
+              <Image.Investment />
             </ListIconWrapperStyled>
             <Hbox.Item vAlign="center">
               <H3>Investimento</H3>
