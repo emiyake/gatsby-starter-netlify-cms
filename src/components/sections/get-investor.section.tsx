@@ -32,7 +32,6 @@ export const GetInvestment: React.FC = () => {
             <SectionWrapperStyled>
               <Reveal bottom cascade>
                 <H1>Receba investimentos</H1>
-                <Separator type="content" />
                 <Body>
                   Vamos além do capital. Apoiamos os empreendedores com a
                   experiência dos investidores associados. Obtenha as conexões

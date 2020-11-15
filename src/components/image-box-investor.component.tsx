@@ -1,12 +1,8 @@
 import React from "react";
-import { Tween } from "react-gsap";
-import { Controller, Scene } from "react-scrollmagic";
 import { FadeImageBoxStyled } from "./animation.components";
 import { Tilt } from "./atm.tilt";
 import {
   ImageBoxStyled,
-  FrontImageStyled,
-  BackImageStyled,
   InvestorImage,
 } from "./image-box.component.style";
 
@@ -18,7 +14,6 @@ interface ImageBoxProps {
 }
 export const ImageBoxInvestor: React.FC<ImageBoxProps> = ({
   frontImageUrl,
-  backImageUrl,
   solidBackground,
   alignFrontRight,
 }) => {

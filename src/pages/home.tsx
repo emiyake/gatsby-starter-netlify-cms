@@ -8,6 +8,7 @@ import { Footer } from "../components/sections/footer.component";
 import { GlobalStyle } from "../components/GlobalStyle";
 import styled from "styled-components";
 import { Grid } from "react-flexbox-grid";
+import { PartnerSection } from "../components/sections/partner.section";
 
 
 const TweenStyled = styled(Grid)`
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
       <AboutUs />
       <GetInvestment />
       <BeInvestor />
+      <PartnerSection />
       <Footer />
     </>
   );
