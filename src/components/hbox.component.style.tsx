@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Spacing } from './constants';
 
 interface BoxProps {
   // src: https://www.w3schools.com/cssref/css3_pr_align-items.asp

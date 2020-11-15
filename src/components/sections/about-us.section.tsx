@@ -60,7 +60,7 @@ export const AboutUs: React.FC = () => {
                 <CardFrame>
                   <Hbox>
                     <Hbox.Item hAlign='center'>
-                      <Image.members />
+                      <Image.Members />
                     </Hbox.Item>
                     <Hbox.Item>
                       <NumberBox title="Investidores anjo">

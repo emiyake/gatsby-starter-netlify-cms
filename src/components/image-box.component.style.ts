@@ -8,7 +8,6 @@ export const ImageBoxStyled = styled.div`
   width: 100%;
   height: 0px;
   padding-bottom: 150%;
-  
 `;
 
 interface ImageProps {
@@ -21,7 +20,6 @@ interface ImageProps {
 
 export const FrontImageStyled = styled.div<ImageProps>`
   position: relative;
-  ${(props) => (props.alignFrontRight ? "right: 0" : "left: 0 ")};
   width: 80%;
   height: 0;
   padding-bottom: 120%;
@@ -32,6 +30,7 @@ export const FrontImageStyled = styled.div<ImageProps>`
   &::before {
     content: "";
     position: absolute;
+    z-index: -1;
     background-color: ${(props) =>
       props.solidBackground ? Color.Primary : "transparent"};
     left: -${Spacing.XLarge};
@@ -67,7 +66,7 @@ position: absolute;
   &::before {
     content: "";
     position: absolute;
-    z-index: -1;
+    z-index: -2;
     background-color: ${(props) =>
       props.solidBackground ? Color.Primary : "transparent"};
     left: -${Spacing.Small};
@@ -77,5 +76,4 @@ position: absolute;
     
   }
   }
-
-`
+`;

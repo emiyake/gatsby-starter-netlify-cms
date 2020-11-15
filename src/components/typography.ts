@@ -57,7 +57,7 @@ export const Span = styled.span`
 
 export const Body = styled.p`
   font-family: ${FontFamily.Secondary};
-  font-size: ${FontSize.Medium};
+  font-size: ${FontSize.Small};
   font-weight: ${FontWeight.Regular};
   color: ${Color.GrayDark};
 `;
