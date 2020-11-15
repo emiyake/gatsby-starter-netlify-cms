@@ -17,7 +17,7 @@ export enum BrandColor {
     public static readonly Transparent = "transparent";
   
     public static readonly GrayXDark = "#222";
-    public static readonly GrayDark = "#AAA";
+    public static readonly GrayDark = "#555";
     public static readonly Gray = "#F9F9F9";
 
     public static readonly Background = "#FFFDFB";
