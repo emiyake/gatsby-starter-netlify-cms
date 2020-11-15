@@ -1,6 +1,5 @@
 import React from "react";
 import { Body, H1 } from "../typography";
-import { SectionWrapperStyled } from "../section-wrapper.component.style";
 import { Separator } from "../separator.component.style";
 import { Grid, Row } from "react-flexbox-grid";
 import { Reveal } from "react-reveal";
@@ -25,19 +24,17 @@ export const BeInvestor: React.FC = () => {
             </Reveal>
           </Col>
           <Col xs={12} md={6}>
-            <SectionWrapperStyled>
-              <Reveal bottom cascade>
-                <H1>
-                  Seja <br /> um investidor
-                </H1>
-                <Separator type="subsection" />
-                <Body>
-                  Se assim como nós, você também é apaixonado por inovação e
-                  empreendedorismo e deseja fazer parte dos negócios do futuro
-                  do país, venha fazer parte da Poli Angels.
-                </Body>
-              </Reveal>
-            </SectionWrapperStyled>
+            <Reveal bottom cascade>
+              <H1>
+                Seja <br /> um investidor
+              </H1>
+              <Separator type="subsection" />
+              <Body>
+                Se assim como nós, você também é apaixonado por inovação e
+                empreendedorismo e deseja fazer parte dos negócios do futuro
+                do país, venha fazer parte da Poli Angels.
+              </Body>
+            </Reveal>
           </Col>
         </Row>
         <Separator type="section" />

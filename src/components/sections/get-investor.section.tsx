@@ -5,7 +5,6 @@ import investorFrontImage from "../../img/img-investor-primary.jpg";
 import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
-import { SectionWrapperStyled } from "../section-wrapper.component.style";
 import { Fade, Reveal } from "react-reveal";
 import { Hbox } from "../hbox.component";
 import { Button } from "./buttton.component";
@@ -28,16 +27,14 @@ export const GetInvestment: React.FC = () => {
             />
           </Col>
           <Col xs={12} md={6} lg={5}>
-            <SectionWrapperStyled>
-              <Reveal bottom cascade>
-                <H1>Receba investimentos</H1>
-                <Body>
-                  Vamos além do capital. Apoiamos os empreendedores com a
-                  experiência dos investidores associados. Obtenha as conexões
-                  certas para o sucesso da sua startup.
-                </Body>
-              </Reveal>
-            </SectionWrapperStyled>
+            <Reveal bottom cascade>
+              <H1>Receba investimentos</H1>
+              <Body>
+                Vamos além do capital. Apoiamos os empreendedores com a
+                experiência dos investidores associados. Obtenha as conexões
+                certas para o sucesso da sua startup.
+              </Body>
+            </Reveal>
           </Col>
         </Row>
       </Grid>
