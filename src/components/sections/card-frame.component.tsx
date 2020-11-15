@@ -1,12 +1,15 @@
 import React from "react";
-import { CardFrameStyled, CardFrameWrapperStyled } from "./card-frame.component.style";
+import { CardFrameStyled, CardFrameStyledProps, CardFrameWrapperStyled } from "./card-frame.component.style";
 import { Tilt } from "../atm.tilt";
 
-export const CardFrame: React.FC = ({children}) => {
+interface CardFrameProps extends CardFrameStyledProps {
+}
+
+export const CardFrame: React.FC<CardFrameProps> = ({noBorder, noPadding, children}) => {
   return (
     <CardFrameWrapperStyled>    
       <Tilt>
-        <CardFrameStyled>
+        <CardFrameStyled noPadding={noPadding} noBorder={noBorder}>
           {children}
         </CardFrameStyled>
       </Tilt>

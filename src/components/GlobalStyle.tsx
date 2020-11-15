@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{ 
-      background-color: ${Color.LightGray};
+      background-color: ${Color.Background};
     }
 
 @media (min-width: 0px){

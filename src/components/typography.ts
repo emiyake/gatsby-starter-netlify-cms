@@ -26,6 +26,7 @@ export const H1 = styled.h1`
     color: ${Color.Primary};
     font-size:${FontSize.XLarge}
   }
+  margin-bottom: ${Spacing.Medium};
 `;
 
 export const H2 = styled.h2`
