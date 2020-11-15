@@ -23,7 +23,7 @@ export const FrontImageStyled = styled.div<ImageProps>`
   width: 80%;
   height: 0;
   padding-bottom: 120%;
-  background: ${Color.LightGray} url(${(props) => props.frontImageUrl})
+  background: ${Color.GrayDark} url(${(props) => props.frontImageUrl})
     no-repeat center center;
   background-size: cover;
   border-radius: ${Radius.Large};
@@ -58,7 +58,7 @@ position: absolute;
   width: 100%;
   height: 100%;
   padding: 0;
-  background: ${Color.LightGray} url(${(props) => props.frontImageUrl})
+  background: ${Color.GrayDark} url(${(props) => props.frontImageUrl})
     no-repeat center center;
   background-size: cover;
 

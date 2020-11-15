@@ -7,7 +7,7 @@ import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
 import { Fade, Reveal } from "react-reveal";
 import { Hbox } from "../hbox.component";
-import { Button } from "./buttton.component";
+import { Button } from "../buttton.component";
 
 import { Image } from "../image.component" 
 import { Link } from "../link.component.style";
@@ -43,21 +43,16 @@ export const GetInvestment: React.FC = () => {
         <Row between="xs" middle="sm" around="xs">
           <Col xs={12} md={12} lg={4}>
             <Fade bottom>
-                <Hbox.Item>
-                  <H2>Inscreva sua startup</H2>
-                </Hbox.Item>
-                <Hbox.Item>
-                  <Body>
-                    Tenha acesso a centenas de investidores, com vasta
-                    experiência no mercado e com uma forte de rede de
-                    relacionamentos.
-                  </Body>
-                  <Separator type="line" />
-                  <Button>
-                    Inscreva-se aqui  
-                  </Button>
-                </Hbox.Item>
-              
+              <H2>Inscreva sua startup</H2>
+              <Body>
+                Tenha acesso a centenas de investidores, com vasta
+                experiência no mercado e com uma forte de rede de
+                relacionamentos.
+              </Body>
+              <Separator type="subsection" />
+              <Button href="https://gust.com/organizations/poliangels/funding_applications/responses/sessions/new" target="_blank">
+                Inscreva-se aqui  
+              </Button>
             </Fade>
           </Col>
           <Col xs={12} md={12} lg={8}>

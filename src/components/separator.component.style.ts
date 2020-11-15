@@ -7,7 +7,7 @@ interface SeparatorProps {
 
 const SeparatorSize = {
   line: Spacing.Small,
-  subsection: Spacing.Medium,
+  subsection: Spacing.Large,
   section: Spacing.XXLarge,
 };
 

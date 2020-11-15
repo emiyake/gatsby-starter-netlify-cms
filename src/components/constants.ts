@@ -2,15 +2,13 @@ import "typeface-inter";
 import "typeface-jost";
 
 export enum BrandColor {
-    Primary = "#1DBBFF",
-    // Secondary = "#000000",
-    Tertiary = "#999999",
+    Blue = "#1DBBFF",
+    Purple = "#B60083",
   }
   
   export class Color {
-    public static readonly Primary = BrandColor.Primary;
-    public static readonly Secondary = BrandColor.Primary;
-    public static readonly Tertiary = BrandColor.Tertiary;
+    public static readonly Primary = BrandColor.Blue;
+    public static readonly CallToAction = BrandColor.Purple;
   
     public static readonly Black = "#0C2634";
     public static readonly White = "#FFFFFF";
@@ -58,14 +56,14 @@ export enum BrandColor {
     XSmall = "1rem",
     Small = "1.2rem",
     Medium = "1.4rem",
-    Large = "4rem",
-    XLarge = "5rem",
+    Large = "3rem",
+    XLarge = "4.2rem",
   }
   
   export enum FontSize {
-    XSmall = "1.3rem",
-    Small = "1.5rem",
-    Medium = "1.8rem",
+    XSmall = "1.2rem",
+    Small = "1.4rem",
+    Medium = "1.5rem",
     Large = "3rem",
     XLarge = "6rem",
   }

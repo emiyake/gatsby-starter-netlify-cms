@@ -9,6 +9,7 @@ import { ImageIcon } from "../image-icon.component";
 import { Col } from "../grid";
 import { H2, H3 } from "../typography";
 import { SectionStyled } from "./section.component.style";
+import { Button } from "../buttton.component";
 
 export const BeInvestor: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ export const BeInvestor: React.FC = () => {
               <CardFrame noPadding={true} noBorder={true}>
                 <Image.BeInvestor />
               </CardFrame>
-              
+          
             </Reveal>
           </Col>
           <Col xs={12} md={6}>
@@ -28,12 +29,15 @@ export const BeInvestor: React.FC = () => {
               <H1>
                 Seja <br /> um investidor
               </H1>
-              <Separator type="subsection" />
               <Body>
                 Se assim como nós, você também é apaixonado por inovação e
                 empreendedorismo e deseja fazer parte dos negócios do futuro
                 do país, venha fazer parte da Poli Angels.
               </Body>
+              <Separator type="subsection" />
+              <Button href="https://gust.com/accounts/group_member_application/new?investor_group_id=poliangels" target="_blank">
+                Associe-se aqui
+              </Button>
             </Reveal>
           </Col>
         </Row>

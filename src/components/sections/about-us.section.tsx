@@ -1,13 +1,9 @@
 import React from "react";
-import {
-  AboutUsTitleStyled,
-  TextBoxStyled,
-} from "../about-us-text-section.component.style";
+
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { Separator } from "../separator.component.style";
-import { Body, H2 } from "../typography";
+import { Body, BodySecondary, H2, Stats } from "../typography";
 import { Reveal } from "react-reveal";
-import { NumberBox } from "../number-display.component";
 import CountUp from "react-countup";
 import { Image } from "../image.component";
 import { CardFrame } from "./card-frame.component";
@@ -21,19 +17,15 @@ export const AboutUs: React.FC = () => {
           <Row center="lg">
             <Col xs={12} md={10} lg={9}>
               <Reveal bottom cascade>
-                <TextBoxStyled>
-                  <AboutUsTitleStyled>
-                    <H2>Sobre a Poli Angels</H2>
-                  </AboutUsTitleStyled>
-                  <Body>
-                    Somos uma associação de investidores, empreendedores e
-                    empresários fundada por ex-alunos da Poli-USP apaixonados por
-                    inovação e tecnologia. Conhecemos os desafios enfrentados
-                    pelas startups early-stage e nossa missão é suportá-las com
-                    mentoria, networking e investimento para juntos transformarmos
-                    o país através do empreendedorismo.
-                  </Body>
-                </TextBoxStyled>
+                <H2 box={true}>Sobre a Poli Angels</H2>
+                <Body>
+                  Somos uma associação de investidores, empreendedores e
+                  empresários fundada por ex-alunos da Poli-USP apaixonados por
+                  inovação e tecnologia. Conhecemos os desafios enfrentados
+                  pelas startups early-stage e nossa missão é suportá-las com
+                  mentoria, networking e investimento para juntos transformarmos
+                  o país através do empreendedorismo.
+                </Body>
               </Reveal>
             </Col>
           </Row>
@@ -46,10 +38,11 @@ export const AboutUs: React.FC = () => {
                     <Hbox.Item hAlign='center'>
                       <Image.Rocket />
                     </Hbox.Item>
-                    <Hbox.Item>
-                      <NumberBox title="Startups investidas">
+                    <Hbox.Item hAlign='center'>
+                      <Stats>
                         <CountUp start={0} end={8} duration={4} useEasing={true} />
-                      </NumberBox>
+                      </Stats>
+                      <BodySecondary>startups investidas</BodySecondary>
                     </Hbox.Item>
                   </Hbox>
                 </CardFrame>
@@ -62,10 +55,11 @@ export const AboutUs: React.FC = () => {
                     <Hbox.Item hAlign='center'>
                       <Image.Members />
                     </Hbox.Item>
-                    <Hbox.Item>
-                      <NumberBox title="Investidores anjo">
+                    <Hbox.Item hAlign='center'>
+                      <Stats>
                         <CountUp start={0} end={126} duration={4} useEasing={true} />
-                      </NumberBox>
+                      </Stats>
+                      <BodySecondary>investidores anjo</BodySecondary>
                     </Hbox.Item>
                   </Hbox>
                 </CardFrame>
@@ -78,10 +72,11 @@ export const AboutUs: React.FC = () => {
                     <Hbox.Item hAlign='center'>
                       <Image.coin />
                     </Hbox.Item>
-                    <Hbox.Item>
-                      <NumberBox title="milhões aportados">
-                        $ <CountUp start={0} end={126} duration={4} useEasing={true} />
-                      </NumberBox>
+                    <Hbox.Item hAlign='center'>
+                      <Stats>
+                        $ <CountUp start={0} end={12} duration={4} useEasing={true} />
+                      </Stats>
+                      <BodySecondary>milhões aportados</BodySecondary>
                     </Hbox.Item>
                   </Hbox>
                 </CardFrame>
@@ -90,7 +85,6 @@ export const AboutUs: React.FC = () => {
           </Row>
         </Grid>
       <Separator type="section" />
-      <div id="trigger" />
     </>
   );
 };
