@@ -26,8 +26,7 @@ export const Image = {
   PartnerGreat: () => <img src={partnerGreat} alt="Great Place to Work" width="60%" />,
   PartnerTaqtile: () => <img src={partnerTaqtile} alt="Instituto Taqtile" width="60%" />,
   PartnerVianna: () => <img src={partnerVianna} alt="Vianna, Burke & Oliveira Franco" width="60%" />,
-  Pitch: () => <img src={pitch} alt="pitch" width="80px" />,
+  Pitch: () => <img src={pitch} alt="pitch" height="80px" />,
   Rocket: () =>  <img src={rocket} alt="rocketIcon" height="80px" />,
   Subscription: () =>  <img src={subscription} alt="subscriptionIcon" height="80px" />,
-
 };

@@ -58,9 +58,9 @@ export const GetInvestment: React.FC = () => {
                     experiência no mercado e com uma forte de rede de
                     relacionamentos.
                   </Body>
-                  <Separator type="content" />
+                  <Separator type="line" />
                   <Button>
-                    Inscreva-se aqui
+                    Inscreva-se aqui  
                   </Button>
                 </Hbox.Item>
               
