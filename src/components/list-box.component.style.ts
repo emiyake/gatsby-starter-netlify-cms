@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import verticalList from "../img/img-vertical-list.png";
-import { Breakpoint, ProportionalSpacing } from "./constants";
+import { Breakpoint, ProportionalSpacing, Spacing } from "./constants";
 
 export const ListBoxStyled = styled.div`
   display: flex;
@@ -8,16 +8,16 @@ export const ListBoxStyled = styled.div`
   justify-content: space-around;
   min-height: 500px;
   width: 100%;
-  @media (max-width: ${Breakpoint.Mobile}) {
-    background: url(${verticalList}) left center no-repeat;
-    background-size: 40% auto;
-  }
 `;
 
 export const ListItemStyled = styled.div`
-  border: 1px solid red;
-  height: 100px;
 `;
+
+export const ListIconWrapperStyled = styled.div`
+  padding: ${Spacing.Small};
+`;
+
+
 
 
 

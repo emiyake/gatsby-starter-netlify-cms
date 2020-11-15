@@ -9,6 +9,8 @@ import { SectionWrapperStyled } from "../section-wrapper.component.style";
 // import { ListBox } from "../list-box.component";
 import { Fade, Reveal } from "react-reveal";
 import { Controller, Scene } from "react-scrollmagic";
+import { Hbox } from "../hbox.component";
+import { Button } from "./buttton.component";
 
 export const GetInvestment: React.FC = () => {
   return (
@@ -47,7 +49,21 @@ export const GetInvestment: React.FC = () => {
         <Row between="xs" middle="sm" around="xs">
           <Col xs={12} md={12} lg={5}>
             <Fade bottom>
-              <H2>Inscreva sua startup</H2>
+                <Hbox.Item>
+                  <H2>Inscreva sua startup</H2>
+                </Hbox.Item>
+                <Hbox.Item>
+                  <Body>
+                    Tenha acesso a centenas de investidores, com vasta
+                    experiência no mercado e com uma forte de rede de
+                    relacionamentos.
+                  </Body>
+                  <Separator type="content" />
+                  <Button>
+                    Inscreva-se aqui
+                  </Button>
+                </Hbox.Item>
+              
             </Fade>
           </Col>
           <Col xs={12} md={12} lg={7}>

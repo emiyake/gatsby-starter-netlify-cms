@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
 import inclinedList from "../img/img-inclined-list.png";
 import rocket from "../img/img-rocket.svg";
