@@ -29,7 +29,7 @@ export const Footer = () => {
                 <BodySecondary>Avenida Escola Politécnica, 80 – Jaguaré – São Paulo</BodySecondary>
               </Hbox.Item>
             </Hbox>
-            <Separator />
+            {/* <Separator />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign='center'>
                 <ImageIcon.Phone />
@@ -38,7 +38,7 @@ export const Footer = () => {
               <Hbox.Item>
                 <BodySecondary>+55 11 9 7638-1777 / +55 11 3145-3709</BodySecondary>
               </Hbox.Item>
-            </Hbox>
+            </Hbox> */}
             <Separator />
             <Hbox>
               <Hbox.Item noGrow={true} vAlign='center'>
@@ -79,7 +79,7 @@ export const Footer = () => {
           </Col>
         </Row>
         <Row center='xs'>
-          <Col>Desenvolvido por Instituto Taqtile @ 2020</Col>
+          <Col>Desenvolvido por <Link  target="blank" href="https://instituto-taqtile.netlify.app/">Instituto Taqtile</Link> @ 2020</Col>
         </Row>
       </Grid>
 

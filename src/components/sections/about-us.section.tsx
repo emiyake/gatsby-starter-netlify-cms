@@ -73,7 +73,7 @@ export const AboutUs: React.FC = () => {
               <CardFrame>
                 <Hbox>
                   <Hbox.Item hAlign='center' noGrow={true}>
-                    <Image.Coin />
+                    <Image.Building />
                   </Hbox.Item>
                   <Hbox.Item hAlign='center'>
                     <Stats>

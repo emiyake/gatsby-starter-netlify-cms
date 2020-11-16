@@ -23,12 +23,14 @@ import logoOnTheGo from "../img/img-logo-onthego.png";
 import logoPoliAngels from "../img/img-logo-pa.png";
 import logoSourceLevel from "../img/img-logo-sourcelevel.png";
 import logoWorc from "../img/img-logo-worc.png";
+import building from "../img/ic-building.svg";
 
 
 export const Image = {
+  BeInvestor: () => <img src={sectionBeInvestor} alt="Seja investidor" width="100%" />,
+  Building: () => <img src={building} alt="building" style={{height: "44px" }} />,
   Coin: () => <img src={coinIcon} alt="coinIcon" style={{height: "44px" }} />,
   committee: () => <img src={committee} alt="committee" width="80px" />,
-  BeInvestor: () => <img src={sectionBeInvestor} alt="Seja investidor" width="100%" />,
   GetMoney: () => <img src={getMoney} alt="Receba investimento" width="100%" />,
   LogoWhite: () => <img src={logoWhite} alt="Logo white" width="120px" />,
   InlinedList: () => <img src={inclinedList} alt="facebookIcon" width="300px" />,

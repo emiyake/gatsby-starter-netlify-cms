@@ -5,7 +5,7 @@ import { Grid } from "../grid";
 
 export const HeroStyled = styled.div`
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background: ${Color.White} url(${homeBackground}) center center no-repeat;
   background-size: cover;
 `;
