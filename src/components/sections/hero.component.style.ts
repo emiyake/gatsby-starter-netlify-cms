@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Color } from "../constants";
 import homeBackground from "../../img/img-home-background.png";
-import { Grid } from "react-flexbox-grid";
+import { Grid } from "../grid";
 
 export const HeroStyled = styled.div`
   width: 100vw;

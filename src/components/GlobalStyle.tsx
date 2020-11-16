@@ -14,13 +14,13 @@ export const GlobalStyle = createGlobalStyle`
 
 @media (min-width: 0px){
   html{
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: ${Breakpoint.Desktop}){
   html{
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 `;

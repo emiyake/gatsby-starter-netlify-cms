@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Grid, Row, Col } from "react-flexbox-grid";
+import { Row, Col } from "react-flexbox-grid";
 import { Separator } from "../separator.component.style";
 import { Body, BodySecondary, H2, Stats } from "../typography";
 import { Reveal } from "react-reveal";
@@ -9,6 +9,7 @@ import { Image } from "../image.component";
 import { CardFrame } from "./card-frame.component";
 import { Hbox } from "../hbox.component";
 import { SectionStyled } from "./section.component.style";
+import { Grid } from "../grid";
 
 export const AboutUs: React.FC = () => {
   return (
@@ -47,6 +48,7 @@ export const AboutUs: React.FC = () => {
                 </Hbox>
               </CardFrame>
             </Reveal>
+            <Separator type="subsection" />
           </Col>
           <Col xs={12} md={4} lg={3}>
             <Reveal bottom wait={2000}>
@@ -64,6 +66,7 @@ export const AboutUs: React.FC = () => {
                 </Hbox>
               </CardFrame>
             </Reveal>
+            <Separator type="subsection" />
           </Col>
           <Col xs={12} md={4} lg={3}>
             <Reveal bottom wait={400}>
@@ -81,6 +84,7 @@ export const AboutUs: React.FC = () => {
                 </Hbox>
               </CardFrame>
             </Reveal>
+            <Separator type="subsection" />
           </Col>
         </Row>
       </Grid>

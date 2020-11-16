@@ -1,11 +1,12 @@
 import React from "react";
-import { Grid, Row } from "react-flexbox-grid";
+import { Row } from "react-flexbox-grid";
 import { H2 } from "../typography";
 import { Image } from "../image.component";
 import { Separator } from "../separator.component.style";
 import { SectionStyled } from "./section.component.style";
 import { Col } from "../grid";
 import { Zoom } from "react-reveal";
+import { Grid } from "../grid";
 
 export const InvestedStartups = () => {
   return (

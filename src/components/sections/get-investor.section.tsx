@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Grid, Row } from "react-flexbox-grid";
+import { Col, Row } from "react-flexbox-grid";
 import { Body, H1, H2, H3 } from "../typography";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
@@ -10,16 +10,14 @@ import { Button } from "../buttton.component";
 import { Image } from "../image.component" 
 import { Link } from "../link.component.style";
 import { SectionStyled } from "./section.component.style";
+import { Grid } from "../grid";
 
 export const GetInvestment: React.FC = () => {
   return (
     <SectionStyled>
       <Grid>
-        <Row between="xs" middle="sm" around="xs" reverse={true}>
-          <Col xs={12} md={6} lg={5}>
-            <ImageBox />
-          </Col>
-          <Col xs={12} md={6} lg={5}>
+        <Row>
+          <Col xs={12} md={5}>
             <Reveal bottom cascade>
               <H1>Receba investimentos</H1>
               <Body>
@@ -28,13 +26,17 @@ export const GetInvestment: React.FC = () => {
                 certas para o sucesso da sua startup.
               </Body>
             </Reveal>
+            <Separator type="section" />
+          </Col>
+          <Col xs={12} md={5} mdOffset={1}>
+            <ImageBox />
           </Col>
         </Row>
       </Grid>
       <Separator type="section" />
       <Grid>
         <Row between="xs" middle="sm" around="xs">
-          <Col xs={12} md={12} lg={4}>
+          <Col xs={12} md={12} lg={5}>
             <Fade bottom>
               <H2>Inscreva sua startup</H2>
               <Body>
@@ -47,8 +49,9 @@ export const GetInvestment: React.FC = () => {
                 Inscreva-se aqui  
               </Button>
             </Fade>
+            <Separator type="subsection" />
           </Col>
-          <Col xs={12} md={12} lg={8}>
+          <Col xs={12} md={12} lg={7}>
             <Fade right cascade>
               <Hbox>
                 <Hbox.Item noGrow={true} vAlign='center'>
