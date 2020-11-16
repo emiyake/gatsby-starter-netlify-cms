@@ -21,23 +21,16 @@ interface ImageProps {
 export const FrontImageStyled = styled.div<ImageProps>`
   position: relative;
   width: 80%;
-  height: 0;
-  padding-bottom: 120%;
-  background: ${Color.GrayDark} url(${(props) => props.frontImageUrl})
-    no-repeat center center;
-  background-size: cover;
-  border-radius: ${Radius.Large};
+  height: 100%;
   &::before {
-    content: "";
+    content: " ";
     position: absolute;
     z-index: -1;
-    background-color: ${(props) =>
-      props.solidBackground ? Color.Primary : "transparent"};
     left: -${Spacing.XLarge};
     top: -${Spacing.XLarge};
     width: 100%;
     height: 100%;
-    
+    background-color: ${Color.Primary};
   }
 `;
 
@@ -47,7 +40,7 @@ export const BackImageStyled = styled.div<ImageProps>`
   right: 0;
   width: 50%;
   height: 0;
-  padding-bottom: 50%;
+  padding-bottom: 70%;
   background: ${Color.Gray} url(${(props) => props.backImageUrl});
   background-size: cover;
 `;

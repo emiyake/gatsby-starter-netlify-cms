@@ -45,7 +45,7 @@ interface FadeProps {
     left: 0;
     right: 0px;
     width: 110%; // to be refactored
-    height: 100%;
+    height: 90%;
     display: inline-block;
     animation: ${props => props.direction ? FadeDirection[props.direction]: FadeTop} 1s ease;
     font-size: 1.2rem;

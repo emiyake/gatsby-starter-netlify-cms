@@ -57,7 +57,7 @@ export enum BrandColor {
     Small = "1.2rem",
     Medium = "1.4rem",
     Large = "3rem",
-    XLarge = "4.2rem",
+    XLarge = "5rem",
   }
   
   export enum FontSize {

@@ -79,12 +79,16 @@ export const Body = styled.p`
   color: ${Color.GrayDark};
 `;
 
+interface BodySecondaryProps {
+  align?: string;
+}
 
 export const BodySecondary = styled.p`
   font-family: ${FontFamily.Secondary};
   font-size: ${FontSize.XSmall};
   font-weight: ${FontWeight.Regular};
   color: ${Color.GrayDark};
+  text-align: ${(props: BodySecondaryProps) => props.align || 'left'};
 `;
 
 export const Quote = styled.span`

@@ -10,6 +10,7 @@ import styled from "styled-components";
 import { Grid } from "react-flexbox-grid";
 import { PartnerSection } from "../components/sections/partner.section";
 import { InvestedStartups } from "../components/sections/invested-startups";
+import { Header } from "../components/sections/header.component";
 
 
 const TweenStyled = styled(Grid)`
@@ -42,6 +43,7 @@ const Home: React.FC = () => {
     <>
       <GlobalStyle />
       <Hero />
+      <Header />
       <AboutUs />
       <GetInvestment />
       <InvestedStartups />

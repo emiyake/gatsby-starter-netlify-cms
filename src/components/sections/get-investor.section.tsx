@@ -1,8 +1,6 @@
 import React from "react";
 import { Col, Grid, Row } from "react-flexbox-grid";
 import { Body, H1, H2, H3 } from "../typography";
-import investorFrontImage from "../../img/img-investor-primary.jpg";
-import investorBackImage from "../../img/img-investor-secondary.png";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
 import { Fade, Reveal } from "react-reveal";
@@ -11,20 +9,15 @@ import { Button } from "../buttton.component";
 
 import { Image } from "../image.component" 
 import { Link } from "../link.component.style";
+import { SectionStyled } from "./section.component.style";
 
 export const GetInvestment: React.FC = () => {
   return (
-    <>
-      <Separator type="section" />
+    <SectionStyled>
       <Grid>
         <Row between="xs" middle="sm" around="xs" reverse={true}>
           <Col xs={12} md={6} lg={5}>
-            <ImageBox
-              frontImageUrl={investorFrontImage}
-              backImageUrl={investorBackImage}
-              solidBackground={false}
-              alignFrontRight={true}
-            />
+            <ImageBox />
           </Col>
           <Col xs={12} md={6} lg={5}>
             <Reveal bottom cascade>
@@ -132,7 +125,6 @@ export const GetInvestment: React.FC = () => {
           </Col>
         </Row>
       </Grid>
-      <Separator type="section" />
-    </>
+    </SectionStyled>
   );
 };
