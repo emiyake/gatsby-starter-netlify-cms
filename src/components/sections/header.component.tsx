@@ -10,7 +10,7 @@ export const Header = () => {
       <Separator type="subsection"/>
       <Grid>
         <Row>
-          <Col>
+          <Col xs={12}>
             <Image.LogoPoliAngels />
           </Col>
         </Row>
