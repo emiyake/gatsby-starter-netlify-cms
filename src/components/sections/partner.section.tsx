@@ -8,6 +8,7 @@ import { H1 } from "../typography";
 import { CardFrame } from "./card-frame.component";
 import { SectionStyled } from "./section.component.style";
 import { Grid } from "../grid";
+import { Link } from "../link.component.style";
 
 export const PartnerSection = () => {
   return (
@@ -27,15 +28,21 @@ export const PartnerSection = () => {
               <CardFrame>
                 <Hbox>
                   <Hbox.Item hAlign="center" vAlign="center">
-                    <Image.PartnerGreat />
+                    <Link target="blank" href="https://gptw.com.br/">
+                      <Image.PartnerGreat />
+                    </Link>
                   </Hbox.Item>
                   <Hbox.Separator />
                   <Hbox.Item hAlign="center" vAlign="center">
-                    <Image.PartnerTaqtile />
+                    <Link target="blank" href="https://instituto-taqtile.netlify.app/">
+                      <Image.PartnerTaqtile />
+                    </Link >
                   </Hbox.Item>
                   <Hbox.Separator />
                   <Hbox.Item hAlign="center" vAlign="center">
-                    <Image.PartnerVianna />
+                    <Link target="blank" href="http://www.veof.com.br/">
+                      <Image.PartnerVianna />
+                    </Link>
                   </Hbox.Item>
                 </Hbox>
               </CardFrame>
