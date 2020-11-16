@@ -7,6 +7,7 @@ import { SectionStyled } from "./section.component.style";
 import { Col } from "../grid";
 import { Zoom } from "react-reveal";
 import { Grid } from "../grid";
+import { LogoBoxStyled } from "../logo-box.component.style";
 
 export const InvestedStartups = () => {
   return (
@@ -20,34 +21,48 @@ export const InvestedStartups = () => {
         <Separator type="subsection" />
         <Zoom cascade>
           <Row center="xs">
-            <Col xs={6} sm={3}>
-              <Image.LogoAgriConnected />
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Image.LogoAgriConnected />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
-            <Col xs={6} sm={3}>
-              <Image.LogoIdgeo />
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Image.LogoIdgeo />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
-            <Col xs={6} sm={3}>
-              <Image.LogoBebidaNaPorta />
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Image.LogoBebidaNaPorta />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
-            <Col xs={6} sm={3}>
-              <Image.LogoWorc />
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Image.LogoWorc />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
           </Row>
           <Row center="xs">
-            <Col xs={6} sm={3}>
-              <Image.LogoOnTheGo />
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Image.LogoOnTheGo />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
-            <Col xs={6} sm={3}>
-              <Image.LogoSourceLevel />
+            <Col xs={12} sm={5}>
+              <LogoBoxStyled>
+                <Image.LogoSourceLevel />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
-            <Col xs={6} sm={3}>
-              <Image.LogoBynd />
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Image.LogoBynd />
+              </LogoBoxStyled>
               <Separator type="subsection"/>
             </Col>
           </Row>

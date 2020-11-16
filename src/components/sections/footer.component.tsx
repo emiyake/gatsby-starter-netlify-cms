@@ -46,7 +46,9 @@ export const Footer = () => {
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item>
-                <BodySecondary>contato@polistart.com.br​</BodySecondary>
+                <Link href="mailto:contato@poliangels.com.br">
+                  <BodySecondary>contato@poliangels.com.br​</BodySecondary>
+                </Link>
               </Hbox.Item>
             </Hbox>
             <Separator type="subsection" />

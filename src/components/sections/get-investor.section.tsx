@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-flexbox-grid";
+import { Col, Grid, Row } from "react-flexbox-grid";
 import { Body, H1, H2, H3 } from "../typography";
 import { ImageBox } from "../image-box.component";
 import { Separator } from "../separator.component.style";
@@ -10,14 +10,16 @@ import { Button } from "../buttton.component";
 import { Image } from "../image.component" 
 import { Link } from "../link.component.style";
 import { SectionStyled } from "./section.component.style";
-import { Grid } from "../grid";
 
 export const GetInvestment: React.FC = () => {
   return (
     <SectionStyled>
       <Grid>
-        <Row>
-          <Col xs={12} md={5}>
+        <Row between="xs" middle="sm" around="xs" reverse={true}>
+          <Col xs={12} md={6} lg={5}>
+            <ImageBox />
+          </Col>
+          <Col xs={12} md={6} lg={5}>
             <Reveal bottom cascade>
               <H1>Receba investimentos</H1>
               <Body>
@@ -26,17 +28,13 @@ export const GetInvestment: React.FC = () => {
                 certas para o sucesso da sua startup.
               </Body>
             </Reveal>
-            <Separator type="section" />
-          </Col>
-          <Col xs={12} md={5} mdOffset={1}>
-            <ImageBox />
           </Col>
         </Row>
       </Grid>
       <Separator type="section" />
       <Grid>
         <Row between="xs" middle="sm" around="xs">
-          <Col xs={12} md={12} lg={5}>
+          <Col xs={12} md={12} lg={4}>
             <Fade bottom>
               <H2>Inscreva sua startup</H2>
               <Body>
@@ -49,9 +47,8 @@ export const GetInvestment: React.FC = () => {
                 Inscreva-se aqui  
               </Button>
             </Fade>
-            <Separator type="subsection" />
           </Col>
-          <Col xs={12} md={12} lg={7}>
+          <Col xs={12} md={12} lg={8}>
             <Fade right cascade>
               <Hbox>
                 <Hbox.Item noGrow={true} vAlign='center'>
@@ -75,8 +72,7 @@ export const GetInvestment: React.FC = () => {
                 <Hbox.Item vAlign="center">
                   <H3>Pitch</H3>
                   <Body>
-                    São realizadas 6 reuniões plenárias (rounds) presenciais ou por
-                    videoconferência, para a apresentação das startups.
+                    A cada dois meses são realizadas rounds presenciais (ou por videoconferência) para apresentação das startups.
                   </Body>
                   <Separator type="line" />
                 </Hbox.Item>
@@ -89,8 +85,7 @@ export const GetInvestment: React.FC = () => {
                 <Hbox.Item vAlign="center">
                   <H3>Comitê de seleção</H3>
                   <Body>
-                    São realizadas 6 reuniões plenárias (rounds) presenciais ou por
-                    videoconferência, para a apresentação das startups.
+                    O comitê de curadoria irá selecionar as startups que irão para a fase de entrevista. Em média, são escolhidas 3 a cada 10 startups.
                   </Body>
                   <Separator type="line" />
                 </Hbox.Item>

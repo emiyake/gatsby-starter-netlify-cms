@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
     <HeroStyled>
       <HeroGridStyled>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} md={8}>
             <DisplayStyled>
               Investimos em
               <StrongWordBoxStyled>

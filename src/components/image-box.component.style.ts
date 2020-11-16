@@ -45,29 +45,3 @@ export const BackImageStyled = styled.div<ImageProps>`
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
 
 `;
-
-export const InvestorImage = styled.div<ImageProps>`
-position: absolute;
-  ${(props) => (props.alignFrontRight ? "right: 0" : "left: 0 ")};
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  background: ${Color.GrayDark} url(${(props) => props.frontImageUrl})
-    no-repeat center center;
-  background-size: cover;
-
- 
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -2;
-    background-color: ${(props) =>
-      props.solidBackground ? Color.Primary : "transparent"};
-    left: -${Spacing.Small};
-    top: -${Spacing.Small};
-    width: 100%;
-    height: 100%;
-    
-  }
-  }
-`;

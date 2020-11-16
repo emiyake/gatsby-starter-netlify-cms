@@ -32,7 +32,7 @@ export const AboutUs: React.FC = () => {
         </Row>
         <Separator type="section" />
         <Row center='md'>
-          <Col xs={12} md={4} lg={3}>
+          <Col xs={12} md={6} lg={4}>
             <Reveal bottom>
               <CardFrame>
                 <Hbox>
@@ -41,7 +41,7 @@ export const AboutUs: React.FC = () => {
                   </Hbox.Item>
                   <Hbox.Item hAlign='center'>
                     <Stats>
-                      <CountUp start={0} end={8} duration={4} useEasing={true} />
+                      <CountUp start={0} end={7} duration={4} useEasing={true} />
                     </Stats>
                     <BodySecondary align='center'>startups investidas</BodySecondary>
                   </Hbox.Item>
@@ -50,8 +50,8 @@ export const AboutUs: React.FC = () => {
             </Reveal>
             <Separator type="subsection" />
           </Col>
-          <Col xs={12} md={4} lg={3}>
-            <Reveal bottom wait={2000}>
+          <Col xs={12} md={6} lg={4}>
+            <Reveal bottom>
               <CardFrame>
                 <Hbox>
                   <Hbox.Item hAlign='center' noGrow={true}>
@@ -59,7 +59,7 @@ export const AboutUs: React.FC = () => {
                   </Hbox.Item>
                   <Hbox.Item hAlign='center'>
                     <Stats>
-                      <CountUp start={0} end={126} duration={4} useEasing={true} />
+                      <CountUp start={0} end={128} duration={4} useEasing={true} />
                     </Stats>
                     <BodySecondary align='center'>investidores anjo</BodySecondary>
                   </Hbox.Item>
@@ -68,8 +68,8 @@ export const AboutUs: React.FC = () => {
             </Reveal>
             <Separator type="subsection" />
           </Col>
-          <Col xs={12} md={4} lg={3}>
-            <Reveal bottom wait={400}>
+          <Col xs={12} md={6} lg={4}>
+            <Reveal bottom>
               <CardFrame>
                 <Hbox>
                   <Hbox.Item hAlign='center' noGrow={true}>
@@ -77,9 +77,9 @@ export const AboutUs: React.FC = () => {
                   </Hbox.Item>
                   <Hbox.Item hAlign='center'>
                     <Stats>
-                      $ <CountUp start={0} end={12} duration={4} useEasing={true} />
+                      <CountUp start={0} end={834} duration={4} useEasing={true} />
                     </Stats>
-                    <BodySecondary align='center'>milhões aportados</BodySecondary>
+                    <BodySecondary align='center'>startups inscritas</BodySecondary>
                   </Hbox.Item>
                 </Hbox>
               </CardFrame>

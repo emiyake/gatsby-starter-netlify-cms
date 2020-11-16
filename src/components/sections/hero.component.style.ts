@@ -17,7 +17,7 @@ export const HeroGridStyled = styled(Grid)`
 `;
 
 export const StrongWordBoxStyled = styled.div`
-  min-height: 8rem;
+  min-height: 6rem;
   width: 100%;
 `
 
