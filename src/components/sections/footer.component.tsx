@@ -54,19 +54,19 @@ export const Footer = () => {
             <H3>Siga nossas redes</H3>
             <Hbox>
               <Hbox.Item noGrow={true}>
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://www.instagram.com/poliangels" target="_blank">
                   <ImageIcon.Instagram />
                 </Link>
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item noGrow={true}>
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://www.linkedin.com/company/poli-angels/" target="_blank">
                   <ImageIcon.Linkedin />
                 </Link>
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item noGrow={true}>
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://www.youtube.com/channel/UCjgQsLwr0nOM2gbTxxcH5lA" target="_blank">
                   <ImageIcon.Youtube />
                 </Link>
               </Hbox.Item>

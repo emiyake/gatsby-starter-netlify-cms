@@ -7,33 +7,24 @@ import {
   BackImageStyled,
 } from "./image-box.component.style";
 import { Fade } from "react-reveal"
+import { Image } from "./image.component";
+import investorBackImage from "..//img/img-investor-secondary.png";
 
-interface ImageBoxProps {
-  frontImageUrl?: string;
-  backImageUrl?: string;
-  solidBackground?: boolean;
-  alignFrontRight?: boolean;
-}
-export const ImageBox: React.FC<ImageBoxProps> = ({
-  frontImageUrl,
-  backImageUrl,
-  alignFrontRight,
-}) => {
+
+export const ImageBox: React.FC = () => {
   return (
     <ImageBoxStyled>
-      <Fade bottom>
-      <FrontImageStyled
-        frontImageUrl={frontImageUrl}
-        alignFrontRight={alignFrontRight}
-        solidBackground={true}
-      />
+      <Fade bottom cascade>
+
+        <FrontImageStyled>
+          <Image.GetMoney />
+        </FrontImageStyled>
+        <FadeImageBoxStyled direction="bottom">
+          <BackImageStyled
+            backImageUrl={investorBackImage}
+          />
+        </FadeImageBoxStyled>
       </Fade>
-      <FadeImageBoxStyled direction="bottom">
-        <BackImageStyled
-          backImageUrl={backImageUrl}
-          alignFrontRight={alignFrontRight}
-        />
-      </FadeImageBoxStyled>
     </ImageBoxStyled>
   );
 };
