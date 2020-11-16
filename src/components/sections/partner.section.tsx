@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Grid, Row } from "react-flexbox-grid";
+import { Col, Row } from "react-flexbox-grid";
 import { Reveal } from "react-reveal";
 import { Hbox } from "../hbox.component";
 import { Image } from "../image.component";
@@ -7,6 +7,7 @@ import { Separator } from "../separator.component.style";
 import { H1 } from "../typography";
 import { CardFrame } from "./card-frame.component";
 import { SectionStyled } from "./section.component.style";
+import { Grid } from "../grid";
 
 export const PartnerSection = () => {
   return (

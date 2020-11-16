@@ -53,19 +53,19 @@ export enum BrandColor {
   }
 
   export enum LineHeight {
-    XSmall = "1rem",
-    Small = "1.2rem",
-    Medium = "1.4rem",
-    Large = "3rem",
-    XLarge = "5rem",
+    XSmall = "1.0rem",
+    Small = "1.1rem",
+    Medium = "1.2rem",
+    Large = "2rem",
+    XLarge = "3rem",
   }
   
   export enum FontSize {
-    XSmall = "1.2rem",
-    Small = "1.4rem",
-    Medium = "1.5rem",
-    Large = "3rem",
-    XLarge = "6rem",
+    XSmall = "1rem",
+    Small = "1.2rem",
+    Medium = "1.4rem",
+    Large = "2rem",
+    XLarge = "3rem",
   }
   
   export enum Radius {

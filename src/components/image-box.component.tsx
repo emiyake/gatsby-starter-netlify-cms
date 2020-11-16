@@ -8,14 +8,14 @@ import {
 } from "./image-box.component.style";
 import { Fade } from "react-reveal"
 import { Image } from "./image.component";
-import investorBackImage from "..//img/img-investor-secondary.png";
+import investorBackImage from "../img/img-investor-secondary.png";
+import { Tilt } from "./atm.tilt";
 
 
 export const ImageBox: React.FC = () => {
   return (
     <ImageBoxStyled>
       <Fade bottom cascade>
-
         <FrontImageStyled>
           <Image.GetMoney />
         </FrontImageStyled>

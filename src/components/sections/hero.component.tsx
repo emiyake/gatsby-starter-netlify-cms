@@ -6,7 +6,7 @@ import {
 } from "./hero.component.style";
 import { Body, DisplayStyled, Enhance } from "../typography";
 import Typist from "react-typist";
-import { Col, Grid, Row } from "react-flexbox-grid";
+import { Col, Row } from "react-flexbox-grid";
 
 export const Hero: React.FC = () => {
   return (

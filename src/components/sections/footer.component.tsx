@@ -1,12 +1,13 @@
 import React from "react";
 import { FooterWrapperStyled } from "./footer.component.style";
-import { Col, Grid, Row } from "react-flexbox-grid";
+import { Col, Row } from "react-flexbox-grid";
 import { BodySecondary, H3 } from "../typography";
 import { ImageIcon } from "../image-icon.component";
 import { Hbox } from "../hbox.component";
 import { Separator } from "../separator.component.style";
 import { Link } from "../link.component.style";
 import { Image } from "../image.component";
+import { Grid } from "../grid";
 
 export const Footer = () => {
   return (
@@ -72,10 +73,11 @@ export const Footer = () => {
               </Hbox.Item>
               <Hbox.Separator />
             </Hbox>
+            <Separator type="subsection" />
           </Col>
         </Row>
         <Row center='xs'>
-          <Col >Desenvolvido por Instituto Taqtile @ 2020</Col>
+          <Col>Desenvolvido por Instituto Taqtile @ 2020</Col>
         </Row>
       </Grid>
 

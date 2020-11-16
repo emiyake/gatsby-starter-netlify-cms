@@ -6,8 +6,6 @@ export const ImageBoxStyled = styled.div`
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 0px;
-  padding-bottom: 150%;
 `;
 
 interface ImageProps {
@@ -22,6 +20,7 @@ export const FrontImageStyled = styled.div<ImageProps>`
   position: relative;
   width: 80%;
   height: 100%;
+  
   &::before {
     content: " ";
     position: absolute;
@@ -41,8 +40,10 @@ export const BackImageStyled = styled.div<ImageProps>`
   width: 50%;
   height: 0;
   padding-bottom: 70%;
-  background: ${Color.Gray} url(${(props) => props.backImageUrl});
+  background: transparent url(${(props) => props.backImageUrl});
   background-size: cover;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+
 `;
 
 export const InvestorImage = styled.div<ImageProps>`

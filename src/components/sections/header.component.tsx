@@ -1,8 +1,9 @@
 import React from "react";
-import { Col, Grid, Row } from "react-flexbox-grid";
+import { Col, Row } from "react-flexbox-grid";
 import { Image } from "../image.component";
 import { Separator } from "../separator.component.style";
 import { HeaderWrapperStyled } from "./header.component.styled";
+import { Grid } from "../grid";
 
 export const Header = () => {
   return (

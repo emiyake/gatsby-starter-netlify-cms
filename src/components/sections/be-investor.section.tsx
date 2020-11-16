@@ -1,7 +1,7 @@
 import React from "react";
 import { Body, H1 } from "../typography";
 import { Separator } from "../separator.component.style";
-import { Grid, Row } from "react-flexbox-grid";
+import { Row } from "react-flexbox-grid";
 import { Reveal } from "react-reveal";
 import { CardFrame } from "./card-frame.component";
 import { Image } from "../image.component";
@@ -10,6 +10,7 @@ import { Col } from "../grid";
 import { H2, H3 } from "../typography";
 import { SectionStyled } from "./section.component.style";
 import { Button } from "../buttton.component";
+import { Grid } from "../grid";
 
 export const BeInvestor: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ export const BeInvestor: React.FC = () => {
               </CardFrame>
           
             </Reveal>
+            <Separator type="subsection" />
           </Col>
           <Col xs={12} md={6}>
             <Reveal bottom cascade>
