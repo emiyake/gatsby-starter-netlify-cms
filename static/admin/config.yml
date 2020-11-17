@@ -1,6 +1,5 @@
 backend:
-  name: test-repo
-  # name: git-gateway
+  name: emiyake/gatsby-starter-netlify-cms
   branch: develop
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
