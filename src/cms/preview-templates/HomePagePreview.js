@@ -7,19 +7,18 @@ const HomePagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     return (
-      <Home
-      />
+      <Home/>
     )
   } else {
     return <div>Loading...</div>
   }
 }
 
-IndexPagePreview.propTypes = {
+HomePagePreview.propTypes = {
   entry: PropTypes.shape({
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
 }
 
-export default IndexPagePreview
+export default HomePagePreview
