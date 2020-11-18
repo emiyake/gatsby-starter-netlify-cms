@@ -10908,7 +10908,7 @@ netlify-cms-lib-auth@^2.2.3:
   resolved "https://registry.yarnpkg.com/netlify-cms-lib-auth/-/netlify-cms-lib-auth-2.2.12.tgz#31506f5c573b65e06675d0256cfd0356d828dc7d"
   integrity sha512-n4vZvw75h0k9T7BcTT+mODP6YpvuvgC9q6dZDU5EK1/tkQ1d3ZTq8Rm9W5VUJLSe5RyOdFBBgdS3M9MFo+R/0Q==
 
-netlify-cms-lib-util@^2.3.2:
+netlify-cms-lib-util@^2.11.5, netlify-cms-lib-util@^2.3.2:
   version "2.11.5"
   resolved "https://registry.yarnpkg.com/netlify-cms-lib-util/-/netlify-cms-lib-util-2.11.5.tgz#ff7ea1f363d59ce919d39eca9941bf13c8c46c1b"
   integrity sha512-zbnKz/ZACLxoJG3wnCXh3zDb8nMH+yjTgYV8uZ4pHUFiS/E2q8kBd4rl+JhP+Jk6Ug7VY14Ol+6HrNoUidN/hQ==
