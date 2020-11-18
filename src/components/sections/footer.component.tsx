@@ -26,7 +26,7 @@ export const Footer = () => {
               </Hbox.Item>
               <Hbox.Separator />
               <Hbox.Item>
-                <BodySecondary>Avenida Escola Politécnica, 80 – Jaguaré – São Paulo</BodySecondary>
+                <BodySecondary>R. Joaquim Floriano 72, conjunto 193 sala 7<br/> 04534-000, Itam Bibi São Paulo SP</BodySecondary>
               </Hbox.Item>
             </Hbox>
             {/* <Separator />
