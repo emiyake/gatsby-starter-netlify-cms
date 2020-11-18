@@ -9,6 +9,7 @@ import { CardFrame } from "./card-frame.component";
 import { SectionStyled } from "./section.component.style";
 import { Grid } from "../grid";
 import { Link } from "../link.component.style";
+import { NoEffectsCardFrame } from "./no-effects-card-frame.component";
 
 export const PartnerSection = () => {
   return (
@@ -25,7 +26,7 @@ export const PartnerSection = () => {
           </Col>
           <Col xs={12} smOffset={1} sm={7}>
             <Reveal bottom>
-              <CardFrame>
+              <NoEffectsCardFrame>
                 <Hbox>
                   <Hbox.Item hAlign="center" vAlign="center">
                     <Link target="blank" href="https://gptw.com.br/">
@@ -34,9 +35,12 @@ export const PartnerSection = () => {
                   </Hbox.Item>
                   <Hbox.Separator />
                   <Hbox.Item hAlign="center" vAlign="center">
-                    <Link target="blank" href="https://instituto-taqtile.netlify.app/">
+                    <Link
+                      target="blank"
+                      href="https://taqtile.com.br/"
+                    >
                       <Image.PartnerTaqtile />
-                    </Link >
+                    </Link>
                   </Hbox.Item>
                   <Hbox.Separator />
                   <Hbox.Item hAlign="center" vAlign="center">
@@ -45,7 +49,7 @@ export const PartnerSection = () => {
                     </Link>
                   </Hbox.Item>
                 </Hbox>
-              </CardFrame>
+              </NoEffectsCardFrame>
             </Reveal>
           </Col>
         </Row>

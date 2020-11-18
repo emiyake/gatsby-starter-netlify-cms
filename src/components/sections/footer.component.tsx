@@ -79,7 +79,7 @@ export const Footer = () => {
           </Col>
         </Row>
         <Row center='xs'>
-          <Col>Desenvolvido por <Link  target="blank" href="https://instituto-taqtile.netlify.app/">Instituto Taqtile</Link> @ 2020</Col>
+          <Col>Desenvolvido por <Link  target="blank" href="https://taqtile.com.br/">Instituto Taqtile</Link> @ 2020</Col>
         </Row>
       </Grid>
 

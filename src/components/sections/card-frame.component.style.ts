@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Color, Radius, Spacing } from "../constants";
 
 export const CardFrameWrapperStyled = styled.div`
-position: relative;
+  position: relative;
   &:before {
     content: " ";
     z-index: -1;
@@ -13,7 +13,6 @@ position: relative;
     right: -${Spacing.Medium};
     background-color: ${Color.Primary};
   }
-
 `;
 
 export interface CardFrameStyledProps {
@@ -22,7 +21,11 @@ export interface CardFrameStyledProps {
 }
 
 export const CardFrameStyled = styled.div`
-  border-radius: ${(props: CardFrameStyledProps) => props.noBorder ? '0' : Radius.Large};
-  background-color: ${(props: CardFrameStyledProps) => props.noPadding ? 'transparent' : Color.White};
-  padding: ${(props: CardFrameStyledProps) => props.noPadding ? '0' : Spacing.Large};
+  border-radius: ${(props: CardFrameStyledProps) =>
+    props.noBorder ? "0" : Radius.Large};
+  background-color: ${(props: CardFrameStyledProps) =>
+    props.noPadding ? "transparent" : Color.White};
+  padding: ${(props: CardFrameStyledProps) =>
+    props.noPadding ? "0" : Spacing.Large};
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
