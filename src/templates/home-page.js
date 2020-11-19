@@ -2,20 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Content, { HTMLContent } from "../components/old/Content";
-import Home from "../pages/home";
+import Home from "../pages/home-backglog";
 
-export const HomePageTemplate = ({title, content, contentComponent, investedStartups }) => {
+export const HomePageTemplate = ({title, content, contentComponent, startupsNumber,investedStartupNumbers }) => {
   const PageContent = contentComponent || Content;
   return (
-    <div>
-      <Home startupsInvested={investedStartups} titleTest={title}/>
+    <>
+  <h2>{title}</h2>
+  <h2>{startupsNumber}</h2>
+  <h2>{investedStartupNumbers}</h2>
       <PageContent className="content" content={content} />
-    </div>
+      <Home startupsInvested={investedStartupNumbers } titleTest={title}/>
+      </>
   );
 };
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  startupsNumber: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -28,8 +32,8 @@ const HomePage = ({ data }) => {
       <HomePageTemplate
         contentComponent={HTMLContent}
         title={frontmatter.title}
+        startupsNumber={frontmatter.startupsNumber}
         investedStartups={frontmatter.title}
-        content={html}
       />
     </>
   );
@@ -46,7 +50,10 @@ export const homePageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title 
+        title
+        investedStartupNumbers
+        angelInvestorsNumber
+        subscribedStartupsNumber    
       }
     }
   }
