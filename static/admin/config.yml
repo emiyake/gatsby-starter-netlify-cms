@@ -1,8 +1,8 @@
 backend:
-  name: github
-  repo: emiyake/gatsby-starter-netlify-cms
-  branch: develop
-  # name: test-repo
+  # name: github
+  # repo: emiyake/gatsby-starter-netlify-cms
+  # branch: develop
+  name: test-repo
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -28,6 +28,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+
 
   - name: "pages"
     label: "Pages"
@@ -89,6 +90,3 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "test-page"}
           - {label: Title, name: title, widget: string}
-          - {label: "Startups investidas", name: "investedStartupNumbers", widget: string}
-          - {label: "Investidores anjo", name: "angelInvestorsNumber", widget: string}
-          - {label: "Startups inscritas", name: "subscribedStartupsNumber", widget: string}

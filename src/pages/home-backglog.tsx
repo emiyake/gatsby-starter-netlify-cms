@@ -37,14 +37,18 @@ const TweenStyled = styled(Grid)`
   }
 `;
 
+interface HomeProps {
+  title: string;
+}
 
-const Home: React.FC = () => {
+
+const Home: React.FC<HomeProps> = (props) => {
   return (
     <>
       <GlobalStyle />
       <Hero />
       <Header />
-      <AboutUs />
+      <AboutUs title={props.title}/>
       <GetInvestment />
       <InvestedStartups />
       <BeInvestor />

@@ -12,14 +12,13 @@ export const HomePageTemplate = ({title, content, contentComponent, startupsNumb
   <h2>{startupsNumber}</h2>
   <h2>{investedStartupNumbers}</h2>
       <PageContent className="content" content={content} />
-      <Home startupsInvested={investedStartupNumbers } titleTest={title}/>
+      <Home startupsInvested={investedStartupNumbers } title={title}/>
       </>
   );
 };
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  startupsNumber: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -51,9 +50,6 @@ export const homePageQuery = graphql`
       html
       frontmatter {
         title
-        investedStartupNumbers
-        angelInvestorsNumber
-        subscribedStartupsNumber    
       }
     }
   }

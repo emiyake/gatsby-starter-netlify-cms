@@ -11,39 +11,50 @@ import { Hbox } from "../hbox.component";
 import { SectionStyled } from "./section.component.style";
 import { Grid } from "../grid";
 
-export const AboutUs: React.FC = () => {
+interface AboutUsProps {
+  title: string;
+}
+
+export const AboutUs: React.FC<AboutUsProps> = (props) => {
   return (
     <SectionStyled>
       <Grid>
         <Row center="lg">
           <Col xs={12} md={10} lg={9}>
             <Reveal bottom cascade>
-              <H2 box={true}>Sobre a Poli Angels</H2>
+              <H2 box={true}>{props.title}</H2>
               <Body>
                 Somos uma associação de investidores, empreendedores e
                 empresários fundada por ex-alunos da Poli-USP apaixonados por
-                inovação e tecnologia. Conhecemos os desafios enfrentados
-                pelas startups early-stage e nossa missão é suportá-las com
-                mentoria, networking e investimento para juntos transformarmos
-                o país através do empreendedorismo.
+                inovação e tecnologia. Conhecemos os desafios enfrentados pelas
+                startups early-stage e nossa missão é suportá-las com mentoria,
+                networking e investimento para juntos transformarmos o país
+                através do empreendedorismo.
               </Body>
             </Reveal>
           </Col>
         </Row>
         <Separator type="section" />
-        <Row center='md'>
+        <Row center="md">
           <Col xs={12} md={6} lg={4}>
             <Reveal bottom>
               <CardFrame>
                 <Hbox>
-                  <Hbox.Item hAlign='center' noGrow={true}>
+                  <Hbox.Item hAlign="center" noGrow={true}>
                     <Image.Rocket />
                   </Hbox.Item>
-                  <Hbox.Item hAlign='center'>
+                  <Hbox.Item hAlign="center">
                     <Stats>
-                      <CountUp start={0} end={7} duration={4} useEasing={true} />
+                      <CountUp
+                        start={0}
+                        end={7}
+                        duration={4}
+                        useEasing={true}
+                      />
                     </Stats>
-                    <BodySecondary align='center'>startups investidas</BodySecondary>
+                    <BodySecondary align="center">
+                      startups investidas
+                    </BodySecondary>
                   </Hbox.Item>
                 </Hbox>
               </CardFrame>
@@ -54,14 +65,21 @@ export const AboutUs: React.FC = () => {
             <Reveal bottom>
               <CardFrame>
                 <Hbox>
-                  <Hbox.Item hAlign='center' noGrow={true}>
+                  <Hbox.Item hAlign="center" noGrow={true}>
                     <Image.Members />
                   </Hbox.Item>
-                  <Hbox.Item hAlign='center'>
+                  <Hbox.Item hAlign="center">
                     <Stats>
-                      <CountUp start={0} end={128} duration={4} useEasing={true} />
+                      <CountUp
+                        start={0}
+                        end={128}
+                        duration={4}
+                        useEasing={true}
+                      />
                     </Stats>
-                    <BodySecondary align='center'>investidores anjo</BodySecondary>
+                    <BodySecondary align="center">
+                      investidores anjo
+                    </BodySecondary>
                   </Hbox.Item>
                 </Hbox>
               </CardFrame>
@@ -72,14 +90,21 @@ export const AboutUs: React.FC = () => {
             <Reveal bottom>
               <CardFrame>
                 <Hbox>
-                  <Hbox.Item hAlign='center' noGrow={true}>
+                  <Hbox.Item hAlign="center" noGrow={true}>
                     <Image.Building />
                   </Hbox.Item>
-                  <Hbox.Item hAlign='center'>
+                  <Hbox.Item hAlign="center">
                     <Stats>
-                      <CountUp start={0} end={834} duration={4} useEasing={true} />
+                      <CountUp
+                        start={0}
+                        end={834}
+                        duration={4}
+                        useEasing={true}
+                      />
                     </Stats>
-                    <BodySecondary align='center'>startups inscritas</BodySecondary>
+                    <BodySecondary align="center">
+                      startups inscritas
+                    </BodySecondary>
                   </Hbox.Item>
                 </Hbox>
               </CardFrame>
