@@ -1,6 +1,6 @@
 ---
 templateKey: home-page
-title: Testando mais um título. Agora vai
+title: about-us
 investedStartupNumbers: '8'
 angelInvestorsNumber: '130'
 subscribedStartupsNumber: '835'
