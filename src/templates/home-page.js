@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Content,{ HTMLContent } from "../components/old/Content";
-import Home from "../pages/home-backglog";
+import Home from "../pages/index";
 
 export const HomePageTemplate = ({
   angelInvestorsNumber,

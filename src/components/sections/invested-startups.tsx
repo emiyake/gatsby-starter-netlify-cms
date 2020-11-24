@@ -13,10 +13,9 @@ import Img from "gatsby-image"
 
 
 interface InvestedStartupsProps {
-  investedStartupImages?: any;
 }
 
-export const InvestedStartups = ({investedStartupImages}) => {
+export const InvestedStartups = () => {
   return (
     <>
     <SectionStyled>

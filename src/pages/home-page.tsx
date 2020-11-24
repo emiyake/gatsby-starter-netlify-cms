@@ -36,16 +36,16 @@ const TweenStyled = styled(Grid)`
   }
 `;
 
+
 interface HomeProps {
   AboutUsNumbers: {
     angelInvestorsNumber: number;
     investedStartupNumbers: number;
     subscribedStartupsNumber: number;
   };
-  investedStartupImages?: { startup: string }[];
 }
 
-const Home: React.FC<HomeProps> = ({ AboutUsNumbers, investedStartupImages }) => {
+const Home: React.FC<HomeProps> = ({ AboutUsNumbers }) => {
   return (
     <>
       <GlobalStyle />
@@ -53,7 +53,7 @@ const Home: React.FC<HomeProps> = ({ AboutUsNumbers, investedStartupImages }) =>
       <Header />
       <AboutUs AboutUsNumbers={AboutUsNumbers} />
       <GetInvestment />
-      <InvestedStartups investedStartupImages={investedStartupImages}/>
+      <InvestedStartups/>
       <BeInvestor />
       <PartnerSection />
       <Footer />

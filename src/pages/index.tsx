@@ -10,13 +10,29 @@ import { PartnerSection } from "../components/sections/partner.section";
 import { InvestedStartups } from "../components/sections/invested-startups";
 import { Header } from "../components/sections/header.component";
 
-const Home: React.FC = () => {
+
+const MOCKED_ABOUT_US_NUMBERS = {
+  investedStartupNumbers: 7,
+  angelInvestorsNumber: 130,
+  subscribedStartupsNumber: 842,
+}
+
+interface HomeProps {
+  AboutUsNumbers: {
+    angelInvestorsNumber: number;
+    investedStartupNumbers: number;
+    subscribedStartupsNumber: number;
+  };
+}
+  
+
+const Home: React.FC<HomeProps> = ({ AboutUsNumbers }) => {
   return (
     <>
       <GlobalStyle />
       <Hero />
       <Header />
-      <AboutUs />
+      <AboutUs AboutUsNumbers={MOCKED_ABOUT_US_NUMBERS} />
       <GetInvestment />
       <InvestedStartups />
       <BeInvestor />

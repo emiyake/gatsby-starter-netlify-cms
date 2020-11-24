@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterWrapperStyled } from "./footer.component.style";
 import { Col, Row } from "react-flexbox-grid";
-import { BodySecondary, H3 } from "../typography";
+import { Body, BodySecondary, H3 } from "../typography";
 import { ImageIcon } from "../image-icon.component";
 import { Hbox } from "../hbox.component";
 import { Separator } from "../separator.component.style";
@@ -79,7 +79,7 @@ export const Footer = () => {
           </Col>
         </Row>
         <Row center='xs'>
-          <Col>Desenvolvido por <Link  target="blank" href="https://taqtile.com.br/">Instituto Taqtile</Link> @ 2020</Col>
+          <Col><Body>Desenvolvido por <Link  target="blank" href="https://taqtile.com.br/">Instituto Taqtile</Link> @2020</Body></Col>
         </Row>
       </Grid>
 
