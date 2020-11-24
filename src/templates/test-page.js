@@ -30,7 +30,6 @@ export const TestPageTemplate = ({
 
 TestPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
@@ -61,7 +60,6 @@ query TestPage($id: String!) {
     html
     frontmatter {
       title
-      image
       # logos {
       #   startup
       # }
