@@ -11,18 +11,25 @@ import { Hbox } from "../hbox.component";
 import { SectionStyled } from "./section.component.style";
 import { Grid } from "../grid";
 
+
+
 interface AboutUsProps {
-  title: string;
+  AboutUsNumbers: {
+    angelInvestorsNumber: number;
+    investedStartupNumbers: number;
+    subscribedStartupsNumber: number;
+  };
 }
 
-export const AboutUs: React.FC<AboutUsProps> = (props) => {
+export const AboutUs: React.FC<AboutUsProps> = ({AboutUsNumbers}) => {
+  
   return (
     <SectionStyled>
       <Grid>
         <Row center="lg">
           <Col xs={12} md={10} lg={9}>
             <Reveal bottom cascade>
-              <H2 box={true}>{props.title}</H2>
+              <H2 box={true}>Sobre a Poli Angels</H2>
               <Body>
                 Somos uma associação de investidores, empreendedores e
                 empresários fundada por ex-alunos da Poli-USP apaixonados por
@@ -47,7 +54,7 @@ export const AboutUs: React.FC<AboutUsProps> = (props) => {
                     <Stats>
                       <CountUp
                         start={0}
-                        end={7}
+                        end={AboutUsNumbers.investedStartupNumbers}
                         duration={4}
                         useEasing={true}
                       />
@@ -72,7 +79,7 @@ export const AboutUs: React.FC<AboutUsProps> = (props) => {
                     <Stats>
                       <CountUp
                         start={0}
-                        end={128}
+                        end={AboutUsNumbers.angelInvestorsNumber}
                         duration={4}
                         useEasing={true}
                       />
@@ -97,7 +104,7 @@ export const AboutUs: React.FC<AboutUsProps> = (props) => {
                     <Stats>
                       <CountUp
                         start={0}
-                        end={834}
+                        end={AboutUsNumbers.subscribedStartupsNumber}
                         duration={4}
                         useEasing={true}
                       />
@@ -114,5 +121,6 @@ export const AboutUs: React.FC<AboutUsProps> = (props) => {
         </Row>
       </Grid>
     </SectionStyled>
+
   );
 };

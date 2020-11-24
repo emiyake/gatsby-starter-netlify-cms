@@ -52,7 +52,7 @@ export const BeInvestor: React.FC = () => {
             <Reveal bottom cascade>
               <ImageIcon.Networking />
               <H3>Conexão</H3>
-              <Body>Conecte-se com os principais formadores de opinião no mundo do investimento e Startups. Aqui você encontra uma vasta rede de investidores e empreendedores</Body>
+              <Body>Conecte-se com os principais formadores de opinião no mundo do investimento e Startups. Aqui você encontra uma vasta rede de investidores e empreendedores.</Body>
             </Reveal>
           </Col>
           <Col xs={12} md={4} hAlign="center">

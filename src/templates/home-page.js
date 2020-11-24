@@ -1,38 +1,49 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import Content, { HTMLContent } from "../components/old/Content";
+import Content,{ HTMLContent } from "../components/old/Content";
 import Home from "../pages/home-backglog";
 
-export const HomePageTemplate = ({title, content, contentComponent, startupsNumber,investedStartupNumbers }) => {
-  const PageContent = contentComponent || Content;
+export const HomePageTemplate = ({
+  angelInvestorsNumber,
+  investedStartupNumbers,
+  subscribedStartupsNumber,
+  content
+}) => {
+  const AboutUsNumbers = {
+    angelInvestorsNumber: angelInvestorsNumber,
+    investedStartupNumbers: investedStartupNumbers,
+    subscribedStartupsNumber: subscribedStartupsNumber,
+  };
+
   return (
     <>
-  <h2>{title}</h2>
-  <h2>{startupsNumber}</h2>
-  <h2>{investedStartupNumbers}</h2>
-      <PageContent className="content" content={content} />
-      <Home startupsInvested={investedStartupNumbers } title={title}/>
-      </>
+      <Home
+        AboutUsNumbers={AboutUsNumbers}
+      />
+    </>
   );
 };
 
 HomePageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  investedStartupNumbers: PropTypes.number.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 };
 
 const HomePage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { markdownRemark: info } = data;
 
   return (
     <>
       <HomePageTemplate
         contentComponent={HTMLContent}
-        title={frontmatter.title}
-        startupsNumber={frontmatter.startupsNumber}
-        investedStartups={frontmatter.title}
+        title={info.frontmatter.title}
+        investedStartupNumbers={info.frontmatter.investedStartupNumbers}
+        angelInvestorsNumber={info.frontmatter.angelInvestorsNumber}
+        subscribedStartupsNumber={info.frontmatter.subscribedStartupsNumber}
+        content={info.html}
       />
     </>
   );
@@ -49,7 +60,9 @@ export const homePageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        title
+        investedStartupNumbers
+        angelInvestorsNumber
+        subscribedStartupsNumber
       }
     }
   }

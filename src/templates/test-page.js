@@ -1,63 +1,72 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/old/Layout'
-import Content, { HTMLContent } from '../components/old/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/old/Layout";
+import Content, { HTMLContent } from "../components/old/Content";
+import { H1} from "../components/typography";
+import { Col, Grid, Row } from "react-flexbox-grid";
 
-export const TestPageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
+export const TestPageTemplate = ({
+  logos,
+}) => {
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
-            </div>
-          </div>    
-        </div>
-      </div>
+    <section>
+      <Grid>
+        <Row center="xs">
+          <H1>Página de testes</H1>
+            {console.log(logos)}
+
+          {/* {logos.map(item => {
+            console.log(item)
+          })} */}
+        </Row>
+        <Row>
+        </Row>  
+      </Grid>
+
     </section>
-  )
-}
+  );
+};
 
 TestPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const TestPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
-    <Layout>
-      <TestPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
-    </Layout>
-  )
-}
+    <TestPageTemplate
+      contentComponent={HTMLContent}
+      title={post.frontmatter.title}
+      image={post.frontmatter.image}
+      // logos={post.frontmatter.logos}
+      content={post.html}
+    />
+  );
+};
 
 TestPage.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default TestPage
+export default TestPage;
 
 export const testPageQuery = graphql`
-  query TestPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
+query TestPage($id: String!) {
+  markdownRemark(id: {eq: $id}) {
+    html
+    frontmatter {
+      title
+      image
+      # logos {
+      #   startup
+      # }
     }
   }
-`
+}
+
+`;

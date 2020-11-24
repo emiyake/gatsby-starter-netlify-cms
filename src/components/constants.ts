@@ -1,4 +1,3 @@
-import "typeface-inter";
 import "typeface-jost";
 
 export enum BrandColor {

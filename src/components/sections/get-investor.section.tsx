@@ -59,7 +59,7 @@ export const GetInvestment: React.FC = () => {
                   <H3>Inscrição</H3>
                   <Body>
                     As startups se inscrevem para participar do processo através da
-                    plataforma <Link target="_blank" href="https://gust.com/pt-BR">GUST</Link>
+                    plataforma <Link target="_blank" href="https://gust.com/pt-BR">GUST</Link>.
                   </Body>
                   <Separator type="line" />
                 </Hbox.Item>
@@ -99,7 +99,7 @@ export const GetInvestment: React.FC = () => {
                   <H3>Entrevista</H3>
                   <Body>
                     Os investidores conhecerão os empreendedores, a solução, o
-                    modelo de negócio, a escalabilidade e o mercado endereçado
+                    modelo de negócio, a escalabilidade e o mercado endereçado.
                   </Body>
                   <Separator type="line" />
                 </Hbox.Item>
@@ -114,7 +114,7 @@ export const GetInvestment: React.FC = () => {
                   <Body>
                     O empreendedor recebe mentoria e investimento de capital. Os
                     recursos são provenientes por cada investidor, de acordo com seu
-                    capital próprio
+                    capital próprio.
                   </Body>
                   <Separator type="line" />
                 </Hbox.Item>

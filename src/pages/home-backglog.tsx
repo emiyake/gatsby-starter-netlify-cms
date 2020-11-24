@@ -12,22 +12,21 @@ import { PartnerSection } from "../components/sections/partner.section";
 import { InvestedStartups } from "../components/sections/invested-startups";
 import { Header } from "../components/sections/header.component";
 
-
 const TweenStyled = styled(Grid)`
   height: 700vh;
   .section {
     height: 100vh;
     background-color: red;
   }
-  
+
   .tween {
-	  width: 100px;
+    width: 100px;
     height: 100px;
     background-color: red;
     margin: 0 !important;
     position: relative;
   }
-  
+
   .stagger {
     width: 100px;
     height: 100px;
@@ -38,22 +37,28 @@ const TweenStyled = styled(Grid)`
 `;
 
 interface HomeProps {
-  title: string;
+  AboutUsNumbers: {
+    angelInvestorsNumber: number;
+    investedStartupNumbers: number;
+    subscribedStartupsNumber: number;
+  };
+  investedStartupImages?: { startup: string }[];
 }
 
-
-const Home: React.FC<HomeProps> = (props) => {
+const Home: React.FC<HomeProps> = ({ AboutUsNumbers, investedStartupImages }) => {
   return (
     <>
       <GlobalStyle />
       <Hero />
       <Header />
-      <AboutUs title={props.title}/>
+      <AboutUs AboutUsNumbers={AboutUsNumbers} />
       <GetInvestment />
-      <InvestedStartups />
+      <InvestedStartups investedStartupImages={investedStartupImages}/>
       <BeInvestor />
       <PartnerSection />
       <Footer />
+      
+
     </>
   );
 };

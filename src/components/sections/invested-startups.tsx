@@ -9,9 +9,16 @@ import { Zoom } from "react-reveal";
 import { Grid } from "../grid";
 import { LogoBoxStyled } from "../logo-box.component.style";
 import { Link } from "../link.component.style";
+import Img from "gatsby-image" 
 
-export const InvestedStartups = () => {
+
+interface InvestedStartupsProps {
+  investedStartupImages?: any;
+}
+
+export const InvestedStartups = ({investedStartupImages}) => {
   return (
+    <>
     <SectionStyled>
       <Grid>
         <Row>
@@ -84,5 +91,83 @@ export const InvestedStartups = () => {
         </Zoom>
       </Grid>
     </SectionStyled>
+
+{/* 
+    <SectionStyled>
+      <Grid>
+        <Row>
+          <Col xs={12} hAlign="center">
+            <H2 box={true}>Teste</H2>
+          </Col>
+        </Row>
+          {console.log(investedStartupImages)}
+        <Separator type="subsection" />
+        <Zoom cascade>
+          <Row center="xs">
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://www.agriconnected.com/">
+                  <Image.LogoAgriConnected />
+                  
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://www.agriconnected.com/">
+                  <Image.LogoIdgeo />
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://www.bebidanaporta.com/">
+                  <Image.LogoBebidaNaPorta />
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://www.worc.com.br/">
+                  <Image.LogoWorc />
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+          </Row>
+          <Row center="xs">
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://www.onthego.com.br/">
+                  <Image.LogoOnTheGo />
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+            <Col xs={12} sm={5}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://sourcelevel.io/">
+                  <Image.LogoSourceLevel />
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+            <Col xs={12} sm={3}>
+              <LogoBoxStyled>
+                <Link target="blank" href="https://bynd.com.br/">
+                  <Image.LogoBynd />
+                </Link>
+              </LogoBoxStyled>
+              <Separator type="subsection" />
+            </Col>
+          </Row>
+        </Zoom>
+      </Grid>
+    </SectionStyled> */}
+
+    </>
   );
 };
